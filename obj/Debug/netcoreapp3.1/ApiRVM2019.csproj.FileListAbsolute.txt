@@ -1,0 +1,371 @@
+C:\Users\PC - OMAR\Desktop\ApiRVM2019\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\PC - OMAR\Desktop\ApiRVM2019\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\PC - OMAR\Desktop\ApiRVM2019\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+C:\Users\PC - OMAR\Desktop\ApiRVM2019\bin\Debug\netcoreapp3.1\ApiRVM2019.exe
+C:\Users\PC - OMAR\Desktop\ApiRVM2019\obj\Debug\netcoreapp3.1\ApiRVM2019.AssemblyInfoInputs.cache
+C:\Users\PC - OMAR\Desktop\ApiRVM2019\obj\Debug\netcoreapp3.1\ApiRVM2019.AssemblyInfo.cs
+C:\Users\PC - OMAR\Desktop\ApiRVM2019\obj\Debug\netcoreapp3.1\ApiRVM2019.RazorTargetAssemblyInfo.cache
+C:\Users\PC - OMAR\Desktop\ApiRVM2019\obj\Debug\netcoreapp3.1\staticwebassets\ApiRVM2019.StaticWebAssets.Manifest.cache
+C:\Users\PC - OMAR\Desktop\ApiRVM2019\obj\Debug\netcoreapp3.1\staticwebassets\ApiRVM2019.StaticWebAssets.xml
+C:\Users\PC - OMAR\Desktop\ApiRVM2019\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
+C:\Users\PC - OMAR\Desktop\ApiRVM2019\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\PC - OMAR\Desktop\ApiRVM2019\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\PC - OMAR\Desktop\ApiRVM2019\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\PC - OMAR\Desktop\ApiRVM2019\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\PC - OMAR\Desktop\ApiRVM2019\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\PC - OMAR\Desktop\ApiRVM2019\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.dll
+C:\Users\PC - OMAR\Desktop\ApiRVM2019\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\PC - OMAR\Desktop\ApiRVM2019\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
+C:\Users\PC - OMAR\Desktop\ApiRVM2019\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+C:\Users\PC - OMAR\Desktop\ApiRVM2019\bin\Debug\netcoreapp3.1\System.Collections.Immutable.dll
+C:\Users\PC - OMAR\Desktop\ApiRVM2019\bin\Debug\netcoreapp3.1\System.ComponentModel.Annotations.dll
+C:\Users\PC - OMAR\Desktop\ApiRVM2019\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
+C:\Users\PC - OMAR\Desktop\ApiRVM2019\obj\Debug\netcoreapp3.1\ApiRVM2019.csproj.CopyComplete
+C:\Users\PC - OMAR\Desktop\ApiRVM2019\bin\Debug\netcoreapp3.1\ApiRVM2019.deps.json
+C:\Users\PC - OMAR\Desktop\ApiRVM2019\bin\Debug\netcoreapp3.1\ApiRVM2019.runtimeconfig.json
+C:\Users\PC - OMAR\Desktop\ApiRVM2019\bin\Debug\netcoreapp3.1\ApiRVM2019.runtimeconfig.dev.json
+C:\Users\PC - OMAR\Desktop\ApiRVM2019\bin\Debug\netcoreapp3.1\ApiRVM2019.dll
+C:\Users\PC - OMAR\Desktop\ApiRVM2019\bin\Debug\netcoreapp3.1\ApiRVM2019.pdb
+C:\Users\PC - OMAR\Desktop\ApiRVM2019\bin\Debug\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\PC - OMAR\Desktop\ApiRVM2019\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\PC - OMAR\Desktop\ApiRVM2019\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\PC - OMAR\Desktop\ApiRVM2019\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\PC - OMAR\Desktop\ApiRVM2019\bin\Debug\netcoreapp3.1\Microsoft.Identity.Client.dll
+C:\Users\PC - OMAR\Desktop\ApiRVM2019\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\PC - OMAR\Desktop\ApiRVM2019\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
+C:\Users\PC - OMAR\Desktop\ApiRVM2019\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
+C:\Users\PC - OMAR\Desktop\ApiRVM2019\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\PC - OMAR\Desktop\ApiRVM2019\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+C:\Users\PC - OMAR\Desktop\ApiRVM2019\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\PC - OMAR\Desktop\ApiRVM2019\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
+C:\Users\PC - OMAR\Desktop\ApiRVM2019\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\PC - OMAR\Desktop\ApiRVM2019\bin\Debug\netcoreapp3.1\System.Runtime.Caching.dll
+C:\Users\PC - OMAR\Desktop\ApiRVM2019\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
+C:\Users\PC - OMAR\Desktop\ApiRVM2019\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\PC - OMAR\Desktop\ApiRVM2019\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\PC - OMAR\Desktop\ApiRVM2019\bin\Debug\netcoreapp3.1\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\PC - OMAR\Desktop\ApiRVM2019\bin\Debug\netcoreapp3.1\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\PC - OMAR\Desktop\ApiRVM2019\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\PC - OMAR\Desktop\ApiRVM2019\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\PC - OMAR\Desktop\ApiRVM2019\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\PC - OMAR\Desktop\ApiRVM2019\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\PC - OMAR\Desktop\ApiRVM2019\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\PC - OMAR\Desktop\ApiRVM2019\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\PC - OMAR\Desktop\ApiRVM2019\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Users\PC - OMAR\Desktop\ApiRVM2019\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\PC - OMAR\Desktop\ApiRVM2019\obj\Debug\netcoreapp3.1\ApiRVM2019.csproj.CoreCompileInputs.cache
+C:\Users\PC - OMAR\Desktop\ApiRVM2019\obj\Debug\netcoreapp3.1\ApiRVM2019.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\PC - OMAR\Desktop\ApiRVM2019\obj\Debug\netcoreapp3.1\ApiRVM2019.dll
+C:\Users\PC - OMAR\Desktop\ApiRVM2019\obj\Debug\netcoreapp3.1\ApiRVM2019.pdb
+C:\Users\PC - OMAR\Desktop\ApiRVM2019\obj\Debug\netcoreapp3.1\ApiRVM2019.genruntimeconfig.cache
+C:\Users\PC - OMAR\Desktop\ApiRVM2019\obj\Debug\netcoreapp3.1\ApiRVM2019.csprojAssemblyReference.cache
+C:\Users\JaviFerri\source\repos\ApiRVM\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\JaviFerri\source\repos\ApiRVM\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\JaviFerri\source\repos\ApiRVM\bin\Debug\netcoreapp3.1\ApiRVM2019.exe
+C:\Users\JaviFerri\source\repos\ApiRVM\bin\Debug\netcoreapp3.1\ApiRVM2019.deps.json
+C:\Users\JaviFerri\source\repos\ApiRVM\bin\Debug\netcoreapp3.1\ApiRVM2019.runtimeconfig.json
+C:\Users\JaviFerri\source\repos\ApiRVM\bin\Debug\netcoreapp3.1\ApiRVM2019.runtimeconfig.dev.json
+C:\Users\JaviFerri\source\repos\ApiRVM\bin\Debug\netcoreapp3.1\ApiRVM2019.dll
+C:\Users\JaviFerri\source\repos\ApiRVM\bin\Debug\netcoreapp3.1\ApiRVM2019.pdb
+C:\Users\JaviFerri\source\repos\ApiRVM\bin\Debug\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\JaviFerri\source\repos\ApiRVM\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
+C:\Users\JaviFerri\source\repos\ApiRVM\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\JaviFerri\source\repos\ApiRVM\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\JaviFerri\source\repos\ApiRVM\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\JaviFerri\source\repos\ApiRVM\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\JaviFerri\source\repos\ApiRVM\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\JaviFerri\source\repos\ApiRVM\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\JaviFerri\source\repos\ApiRVM\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\JaviFerri\source\repos\ApiRVM\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\JaviFerri\source\repos\ApiRVM\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.dll
+C:\Users\JaviFerri\source\repos\ApiRVM\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\JaviFerri\source\repos\ApiRVM\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
+C:\Users\JaviFerri\source\repos\ApiRVM\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+C:\Users\JaviFerri\source\repos\ApiRVM\bin\Debug\netcoreapp3.1\Microsoft.Identity.Client.dll
+C:\Users\JaviFerri\source\repos\ApiRVM\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\JaviFerri\source\repos\ApiRVM\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
+C:\Users\JaviFerri\source\repos\ApiRVM\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
+C:\Users\JaviFerri\source\repos\ApiRVM\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\JaviFerri\source\repos\ApiRVM\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+C:\Users\JaviFerri\source\repos\ApiRVM\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\JaviFerri\source\repos\ApiRVM\bin\Debug\netcoreapp3.1\System.Collections.Immutable.dll
+C:\Users\JaviFerri\source\repos\ApiRVM\bin\Debug\netcoreapp3.1\System.ComponentModel.Annotations.dll
+C:\Users\JaviFerri\source\repos\ApiRVM\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
+C:\Users\JaviFerri\source\repos\ApiRVM\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
+C:\Users\JaviFerri\source\repos\ApiRVM\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\JaviFerri\source\repos\ApiRVM\bin\Debug\netcoreapp3.1\System.Runtime.Caching.dll
+C:\Users\JaviFerri\source\repos\ApiRVM\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
+C:\Users\JaviFerri\source\repos\ApiRVM\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\JaviFerri\source\repos\ApiRVM\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\JaviFerri\source\repos\ApiRVM\bin\Debug\netcoreapp3.1\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\JaviFerri\source\repos\ApiRVM\bin\Debug\netcoreapp3.1\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\JaviFerri\source\repos\ApiRVM\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\JaviFerri\source\repos\ApiRVM\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\JaviFerri\source\repos\ApiRVM\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\JaviFerri\source\repos\ApiRVM\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\JaviFerri\source\repos\ApiRVM\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\JaviFerri\source\repos\ApiRVM\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\JaviFerri\source\repos\ApiRVM\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Users\JaviFerri\source\repos\ApiRVM\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\JaviFerri\source\repos\ApiRVM\obj\Debug\netcoreapp3.1\ApiRVM2019.csproj.AssemblyReference.cache
+C:\Users\JaviFerri\source\repos\ApiRVM\obj\Debug\netcoreapp3.1\ApiRVM2019.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\JaviFerri\source\repos\ApiRVM\obj\Debug\netcoreapp3.1\ApiRVM2019.AssemblyInfoInputs.cache
+C:\Users\JaviFerri\source\repos\ApiRVM\obj\Debug\netcoreapp3.1\ApiRVM2019.AssemblyInfo.cs
+C:\Users\JaviFerri\source\repos\ApiRVM\obj\Debug\netcoreapp3.1\ApiRVM2019.csproj.CoreCompileInputs.cache
+C:\Users\JaviFerri\source\repos\ApiRVM\obj\Debug\netcoreapp3.1\ApiRVM2019.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\JaviFerri\source\repos\ApiRVM\obj\Debug\netcoreapp3.1\staticwebassets\ApiRVM2019.StaticWebAssets.Manifest.cache
+C:\Users\JaviFerri\source\repos\ApiRVM\obj\Debug\netcoreapp3.1\staticwebassets\ApiRVM2019.StaticWebAssets.xml
+C:\Users\JaviFerri\source\repos\ApiRVM\obj\Debug\netcoreapp3.1\scopedcss\bundle\ApiRVM2019.styles.css
+C:\Users\JaviFerri\source\repos\ApiRVM\obj\Debug\netcoreapp3.1\ApiRVM2019.RazorTargetAssemblyInfo.cache
+C:\Users\JaviFerri\source\repos\ApiRVM\obj\Debug\netcoreapp3.1\ApiRVM2019.csproj.CopyComplete
+C:\Users\JaviFerri\source\repos\ApiRVM\obj\Debug\netcoreapp3.1\ApiRVM2019.dll
+C:\Users\JaviFerri\source\repos\ApiRVM\obj\Debug\netcoreapp3.1\ApiRVM2019.pdb
+C:\Users\JaviFerri\source\repos\ApiRVM\obj\Debug\netcoreapp3.1\ApiRVM2019.genruntimeconfig.cache
+C:\Users\PC - OMAR\source\repos\ApiRVM\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\PC - OMAR\source\repos\ApiRVM\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\PC - OMAR\source\repos\ApiRVM\bin\Debug\netcoreapp3.1\ApiRVM2019.exe
+C:\Users\PC - OMAR\source\repos\ApiRVM\bin\Debug\netcoreapp3.1\ApiRVM2019.deps.json
+C:\Users\PC - OMAR\source\repos\ApiRVM\bin\Debug\netcoreapp3.1\ApiRVM2019.runtimeconfig.json
+C:\Users\PC - OMAR\source\repos\ApiRVM\bin\Debug\netcoreapp3.1\ApiRVM2019.runtimeconfig.dev.json
+C:\Users\PC - OMAR\source\repos\ApiRVM\bin\Debug\netcoreapp3.1\ApiRVM2019.dll
+C:\Users\PC - OMAR\source\repos\ApiRVM\bin\Debug\netcoreapp3.1\ApiRVM2019.pdb
+C:\Users\PC - OMAR\source\repos\ApiRVM\bin\Debug\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\PC - OMAR\source\repos\ApiRVM\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
+C:\Users\PC - OMAR\source\repos\ApiRVM\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\PC - OMAR\source\repos\ApiRVM\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\PC - OMAR\source\repos\ApiRVM\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\PC - OMAR\source\repos\ApiRVM\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\PC - OMAR\source\repos\ApiRVM\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\PC - OMAR\source\repos\ApiRVM\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\PC - OMAR\source\repos\ApiRVM\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\PC - OMAR\source\repos\ApiRVM\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\PC - OMAR\source\repos\ApiRVM\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.dll
+C:\Users\PC - OMAR\source\repos\ApiRVM\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\PC - OMAR\source\repos\ApiRVM\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
+C:\Users\PC - OMAR\source\repos\ApiRVM\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+C:\Users\PC - OMAR\source\repos\ApiRVM\bin\Debug\netcoreapp3.1\Microsoft.Identity.Client.dll
+C:\Users\PC - OMAR\source\repos\ApiRVM\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\PC - OMAR\source\repos\ApiRVM\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
+C:\Users\PC - OMAR\source\repos\ApiRVM\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
+C:\Users\PC - OMAR\source\repos\ApiRVM\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\PC - OMAR\source\repos\ApiRVM\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+C:\Users\PC - OMAR\source\repos\ApiRVM\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\PC - OMAR\source\repos\ApiRVM\bin\Debug\netcoreapp3.1\System.Collections.Immutable.dll
+C:\Users\PC - OMAR\source\repos\ApiRVM\bin\Debug\netcoreapp3.1\System.ComponentModel.Annotations.dll
+C:\Users\PC - OMAR\source\repos\ApiRVM\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
+C:\Users\PC - OMAR\source\repos\ApiRVM\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
+C:\Users\PC - OMAR\source\repos\ApiRVM\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\PC - OMAR\source\repos\ApiRVM\bin\Debug\netcoreapp3.1\System.Runtime.Caching.dll
+C:\Users\PC - OMAR\source\repos\ApiRVM\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
+C:\Users\PC - OMAR\source\repos\ApiRVM\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\PC - OMAR\source\repos\ApiRVM\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\PC - OMAR\source\repos\ApiRVM\bin\Debug\netcoreapp3.1\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\PC - OMAR\source\repos\ApiRVM\bin\Debug\netcoreapp3.1\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\PC - OMAR\source\repos\ApiRVM\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\PC - OMAR\source\repos\ApiRVM\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\PC - OMAR\source\repos\ApiRVM\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\PC - OMAR\source\repos\ApiRVM\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\PC - OMAR\source\repos\ApiRVM\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\PC - OMAR\source\repos\ApiRVM\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\PC - OMAR\source\repos\ApiRVM\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Users\PC - OMAR\source\repos\ApiRVM\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\PC - OMAR\source\repos\ApiRVM\obj\Debug\netcoreapp3.1\ApiRVM2019.csproj.AssemblyReference.cache
+C:\Users\PC - OMAR\source\repos\ApiRVM\obj\Debug\netcoreapp3.1\ApiRVM2019.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PC - OMAR\source\repos\ApiRVM\obj\Debug\netcoreapp3.1\ApiRVM2019.AssemblyInfoInputs.cache
+C:\Users\PC - OMAR\source\repos\ApiRVM\obj\Debug\netcoreapp3.1\ApiRVM2019.AssemblyInfo.cs
+C:\Users\PC - OMAR\source\repos\ApiRVM\obj\Debug\netcoreapp3.1\ApiRVM2019.csproj.CoreCompileInputs.cache
+C:\Users\PC - OMAR\source\repos\ApiRVM\obj\Debug\netcoreapp3.1\ApiRVM2019.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\PC - OMAR\source\repos\ApiRVM\obj\Debug\netcoreapp3.1\staticwebassets\ApiRVM2019.StaticWebAssets.Manifest.cache
+C:\Users\PC - OMAR\source\repos\ApiRVM\obj\Debug\netcoreapp3.1\staticwebassets\ApiRVM2019.StaticWebAssets.xml
+C:\Users\PC - OMAR\source\repos\ApiRVM\obj\Debug\netcoreapp3.1\scopedcss\bundle\ApiRVM2019.styles.css
+C:\Users\PC - OMAR\source\repos\ApiRVM\obj\Debug\netcoreapp3.1\ApiRVM2019.RazorTargetAssemblyInfo.cache
+C:\Users\PC - OMAR\source\repos\ApiRVM\obj\Debug\netcoreapp3.1\ApiRVM2019.csproj.CopyComplete
+C:\Users\PC - OMAR\source\repos\ApiRVM\obj\Debug\netcoreapp3.1\ApiRVM2019.dll
+C:\Users\PC - OMAR\source\repos\ApiRVM\obj\Debug\netcoreapp3.1\ApiRVM2019.pdb
+C:\Users\PC - OMAR\source\repos\ApiRVM\obj\Debug\netcoreapp3.1\ApiRVM2019.genruntimeconfig.cache
+C:\Users\usuario\Source\Repos\ApiRVM\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\usuario\Source\Repos\ApiRVM\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\usuario\Source\Repos\ApiRVM\bin\Debug\netcoreapp3.1\ApiRVM2019.exe
+C:\Users\usuario\Source\Repos\ApiRVM\bin\Debug\netcoreapp3.1\ApiRVM2019.deps.json
+C:\Users\usuario\Source\Repos\ApiRVM\bin\Debug\netcoreapp3.1\ApiRVM2019.runtimeconfig.json
+C:\Users\usuario\Source\Repos\ApiRVM\bin\Debug\netcoreapp3.1\ApiRVM2019.runtimeconfig.dev.json
+C:\Users\usuario\Source\Repos\ApiRVM\bin\Debug\netcoreapp3.1\ApiRVM2019.dll
+C:\Users\usuario\Source\Repos\ApiRVM\bin\Debug\netcoreapp3.1\ApiRVM2019.pdb
+C:\Users\usuario\Source\Repos\ApiRVM\bin\Debug\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\usuario\Source\Repos\ApiRVM\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
+C:\Users\usuario\Source\Repos\ApiRVM\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\usuario\Source\Repos\ApiRVM\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\usuario\Source\Repos\ApiRVM\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\usuario\Source\Repos\ApiRVM\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\usuario\Source\Repos\ApiRVM\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\usuario\Source\Repos\ApiRVM\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\usuario\Source\Repos\ApiRVM\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\usuario\Source\Repos\ApiRVM\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\usuario\Source\Repos\ApiRVM\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.dll
+C:\Users\usuario\Source\Repos\ApiRVM\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\usuario\Source\Repos\ApiRVM\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
+C:\Users\usuario\Source\Repos\ApiRVM\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+C:\Users\usuario\Source\Repos\ApiRVM\bin\Debug\netcoreapp3.1\Microsoft.Identity.Client.dll
+C:\Users\usuario\Source\Repos\ApiRVM\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\usuario\Source\Repos\ApiRVM\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
+C:\Users\usuario\Source\Repos\ApiRVM\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
+C:\Users\usuario\Source\Repos\ApiRVM\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\usuario\Source\Repos\ApiRVM\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+C:\Users\usuario\Source\Repos\ApiRVM\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\usuario\Source\Repos\ApiRVM\bin\Debug\netcoreapp3.1\System.Collections.Immutable.dll
+C:\Users\usuario\Source\Repos\ApiRVM\bin\Debug\netcoreapp3.1\System.ComponentModel.Annotations.dll
+C:\Users\usuario\Source\Repos\ApiRVM\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
+C:\Users\usuario\Source\Repos\ApiRVM\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
+C:\Users\usuario\Source\Repos\ApiRVM\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\usuario\Source\Repos\ApiRVM\bin\Debug\netcoreapp3.1\System.Runtime.Caching.dll
+C:\Users\usuario\Source\Repos\ApiRVM\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
+C:\Users\usuario\Source\Repos\ApiRVM\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\usuario\Source\Repos\ApiRVM\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\usuario\Source\Repos\ApiRVM\bin\Debug\netcoreapp3.1\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\usuario\Source\Repos\ApiRVM\bin\Debug\netcoreapp3.1\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\usuario\Source\Repos\ApiRVM\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\usuario\Source\Repos\ApiRVM\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\usuario\Source\Repos\ApiRVM\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\usuario\Source\Repos\ApiRVM\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\usuario\Source\Repos\ApiRVM\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\usuario\Source\Repos\ApiRVM\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\usuario\Source\Repos\ApiRVM\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Users\usuario\Source\Repos\ApiRVM\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\usuario\Source\Repos\ApiRVM\obj\Debug\netcoreapp3.1\ApiRVM2019.csproj.AssemblyReference.cache
+C:\Users\usuario\Source\Repos\ApiRVM\obj\Debug\netcoreapp3.1\ApiRVM2019.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\usuario\Source\Repos\ApiRVM\obj\Debug\netcoreapp3.1\ApiRVM2019.AssemblyInfoInputs.cache
+C:\Users\usuario\Source\Repos\ApiRVM\obj\Debug\netcoreapp3.1\ApiRVM2019.AssemblyInfo.cs
+C:\Users\usuario\Source\Repos\ApiRVM\obj\Debug\netcoreapp3.1\ApiRVM2019.csproj.CoreCompileInputs.cache
+C:\Users\usuario\Source\Repos\ApiRVM\obj\Debug\netcoreapp3.1\ApiRVM2019.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\usuario\Source\Repos\ApiRVM\obj\Debug\netcoreapp3.1\staticwebassets\ApiRVM2019.StaticWebAssets.Manifest.cache
+C:\Users\usuario\Source\Repos\ApiRVM\obj\Debug\netcoreapp3.1\staticwebassets\ApiRVM2019.StaticWebAssets.xml
+C:\Users\usuario\Source\Repos\ApiRVM\obj\Debug\netcoreapp3.1\scopedcss\bundle\ApiRVM2019.styles.css
+C:\Users\usuario\Source\Repos\ApiRVM\obj\Debug\netcoreapp3.1\ApiRVM2019.RazorTargetAssemblyInfo.cache
+C:\Users\usuario\Source\Repos\ApiRVM\obj\Debug\netcoreapp3.1\ApiRVM2019.csproj.CopyComplete
+C:\Users\usuario\Source\Repos\ApiRVM\obj\Debug\netcoreapp3.1\ApiRVM2019.dll
+C:\Users\usuario\Source\Repos\ApiRVM\obj\Debug\netcoreapp3.1\ApiRVM2019.pdb
+C:\Users\usuario\Source\Repos\ApiRVM\obj\Debug\netcoreapp3.1\ApiRVM2019.genruntimeconfig.cache
+C:\Users\omard\Desktop\ApiRVM\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\omard\Desktop\ApiRVM\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\omard\Desktop\ApiRVM\bin\Debug\netcoreapp3.1\ApiRVM2019.exe
+C:\Users\omard\Desktop\ApiRVM\bin\Debug\netcoreapp3.1\ApiRVM2019.deps.json
+C:\Users\omard\Desktop\ApiRVM\bin\Debug\netcoreapp3.1\ApiRVM2019.runtimeconfig.json
+C:\Users\omard\Desktop\ApiRVM\bin\Debug\netcoreapp3.1\ApiRVM2019.runtimeconfig.dev.json
+C:\Users\omard\Desktop\ApiRVM\bin\Debug\netcoreapp3.1\ApiRVM2019.dll
+C:\Users\omard\Desktop\ApiRVM\bin\Debug\netcoreapp3.1\ApiRVM2019.pdb
+C:\Users\omard\Desktop\ApiRVM\bin\Debug\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\omard\Desktop\ApiRVM\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
+C:\Users\omard\Desktop\ApiRVM\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\omard\Desktop\ApiRVM\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\omard\Desktop\ApiRVM\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\omard\Desktop\ApiRVM\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\omard\Desktop\ApiRVM\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\omard\Desktop\ApiRVM\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\omard\Desktop\ApiRVM\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\omard\Desktop\ApiRVM\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\omard\Desktop\ApiRVM\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.dll
+C:\Users\omard\Desktop\ApiRVM\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\omard\Desktop\ApiRVM\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
+C:\Users\omard\Desktop\ApiRVM\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+C:\Users\omard\Desktop\ApiRVM\bin\Debug\netcoreapp3.1\Microsoft.Identity.Client.dll
+C:\Users\omard\Desktop\ApiRVM\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\omard\Desktop\ApiRVM\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
+C:\Users\omard\Desktop\ApiRVM\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
+C:\Users\omard\Desktop\ApiRVM\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\omard\Desktop\ApiRVM\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+C:\Users\omard\Desktop\ApiRVM\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\omard\Desktop\ApiRVM\bin\Debug\netcoreapp3.1\System.Collections.Immutable.dll
+C:\Users\omard\Desktop\ApiRVM\bin\Debug\netcoreapp3.1\System.ComponentModel.Annotations.dll
+C:\Users\omard\Desktop\ApiRVM\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
+C:\Users\omard\Desktop\ApiRVM\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
+C:\Users\omard\Desktop\ApiRVM\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\omard\Desktop\ApiRVM\bin\Debug\netcoreapp3.1\System.Runtime.Caching.dll
+C:\Users\omard\Desktop\ApiRVM\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
+C:\Users\omard\Desktop\ApiRVM\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\omard\Desktop\ApiRVM\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\omard\Desktop\ApiRVM\bin\Debug\netcoreapp3.1\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\omard\Desktop\ApiRVM\bin\Debug\netcoreapp3.1\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\omard\Desktop\ApiRVM\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\omard\Desktop\ApiRVM\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\omard\Desktop\ApiRVM\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\omard\Desktop\ApiRVM\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\omard\Desktop\ApiRVM\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\omard\Desktop\ApiRVM\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\omard\Desktop\ApiRVM\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Users\omard\Desktop\ApiRVM\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\omard\Desktop\ApiRVM\obj\Debug\netcoreapp3.1\ApiRVM2019.csproj.AssemblyReference.cache
+C:\Users\omard\Desktop\ApiRVM\obj\Debug\netcoreapp3.1\ApiRVM2019.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\omard\Desktop\ApiRVM\obj\Debug\netcoreapp3.1\ApiRVM2019.AssemblyInfoInputs.cache
+C:\Users\omard\Desktop\ApiRVM\obj\Debug\netcoreapp3.1\ApiRVM2019.AssemblyInfo.cs
+C:\Users\omard\Desktop\ApiRVM\obj\Debug\netcoreapp3.1\ApiRVM2019.csproj.CoreCompileInputs.cache
+C:\Users\omard\Desktop\ApiRVM\obj\Debug\netcoreapp3.1\ApiRVM2019.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\omard\Desktop\ApiRVM\obj\Debug\netcoreapp3.1\staticwebassets\ApiRVM2019.StaticWebAssets.Manifest.cache
+C:\Users\omard\Desktop\ApiRVM\obj\Debug\netcoreapp3.1\staticwebassets\ApiRVM2019.StaticWebAssets.xml
+C:\Users\omard\Desktop\ApiRVM\obj\Debug\netcoreapp3.1\scopedcss\bundle\ApiRVM2019.styles.css
+C:\Users\omard\Desktop\ApiRVM\obj\Debug\netcoreapp3.1\ApiRVM2019.RazorTargetAssemblyInfo.cache
+C:\Users\omard\Desktop\ApiRVM\obj\Debug\netcoreapp3.1\ApiRVM2019.csproj.CopyComplete
+C:\Users\omard\Desktop\ApiRVM\obj\Debug\netcoreapp3.1\ApiRVM2019.dll
+C:\Users\omard\Desktop\ApiRVM\obj\Debug\netcoreapp3.1\ApiRVM2019.pdb
+C:\Users\omard\Desktop\ApiRVM\obj\Debug\netcoreapp3.1\ApiRVM2019.genruntimeconfig.cache
+C:\Users\omard\Desktop\Api RVM 2.0\ApiRVM\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\omard\Desktop\Api RVM 2.0\ApiRVM\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\omard\Desktop\Api RVM 2.0\ApiRVM\bin\Debug\netcoreapp3.1\ApiRVM2019.exe
+C:\Users\omard\Desktop\Api RVM 2.0\ApiRVM\bin\Debug\netcoreapp3.1\ApiRVM2019.deps.json
+C:\Users\omard\Desktop\Api RVM 2.0\ApiRVM\bin\Debug\netcoreapp3.1\ApiRVM2019.runtimeconfig.json
+C:\Users\omard\Desktop\Api RVM 2.0\ApiRVM\bin\Debug\netcoreapp3.1\ApiRVM2019.runtimeconfig.dev.json
+C:\Users\omard\Desktop\Api RVM 2.0\ApiRVM\bin\Debug\netcoreapp3.1\ApiRVM2019.dll
+C:\Users\omard\Desktop\Api RVM 2.0\ApiRVM\bin\Debug\netcoreapp3.1\ApiRVM2019.pdb
+C:\Users\omard\Desktop\Api RVM 2.0\ApiRVM\bin\Debug\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\omard\Desktop\Api RVM 2.0\ApiRVM\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
+C:\Users\omard\Desktop\Api RVM 2.0\ApiRVM\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\omard\Desktop\Api RVM 2.0\ApiRVM\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\omard\Desktop\Api RVM 2.0\ApiRVM\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\omard\Desktop\Api RVM 2.0\ApiRVM\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\omard\Desktop\Api RVM 2.0\ApiRVM\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\omard\Desktop\Api RVM 2.0\ApiRVM\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\omard\Desktop\Api RVM 2.0\ApiRVM\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\omard\Desktop\Api RVM 2.0\ApiRVM\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\omard\Desktop\Api RVM 2.0\ApiRVM\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.dll
+C:\Users\omard\Desktop\Api RVM 2.0\ApiRVM\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\omard\Desktop\Api RVM 2.0\ApiRVM\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
+C:\Users\omard\Desktop\Api RVM 2.0\ApiRVM\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+C:\Users\omard\Desktop\Api RVM 2.0\ApiRVM\bin\Debug\netcoreapp3.1\Microsoft.Identity.Client.dll
+C:\Users\omard\Desktop\Api RVM 2.0\ApiRVM\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\omard\Desktop\Api RVM 2.0\ApiRVM\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
+C:\Users\omard\Desktop\Api RVM 2.0\ApiRVM\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
+C:\Users\omard\Desktop\Api RVM 2.0\ApiRVM\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\omard\Desktop\Api RVM 2.0\ApiRVM\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+C:\Users\omard\Desktop\Api RVM 2.0\ApiRVM\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\omard\Desktop\Api RVM 2.0\ApiRVM\bin\Debug\netcoreapp3.1\System.Collections.Immutable.dll
+C:\Users\omard\Desktop\Api RVM 2.0\ApiRVM\bin\Debug\netcoreapp3.1\System.ComponentModel.Annotations.dll
+C:\Users\omard\Desktop\Api RVM 2.0\ApiRVM\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
+C:\Users\omard\Desktop\Api RVM 2.0\ApiRVM\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
+C:\Users\omard\Desktop\Api RVM 2.0\ApiRVM\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\omard\Desktop\Api RVM 2.0\ApiRVM\bin\Debug\netcoreapp3.1\System.Runtime.Caching.dll
+C:\Users\omard\Desktop\Api RVM 2.0\ApiRVM\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
+C:\Users\omard\Desktop\Api RVM 2.0\ApiRVM\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\omard\Desktop\Api RVM 2.0\ApiRVM\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\omard\Desktop\Api RVM 2.0\ApiRVM\bin\Debug\netcoreapp3.1\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\omard\Desktop\Api RVM 2.0\ApiRVM\bin\Debug\netcoreapp3.1\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\omard\Desktop\Api RVM 2.0\ApiRVM\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\omard\Desktop\Api RVM 2.0\ApiRVM\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\omard\Desktop\Api RVM 2.0\ApiRVM\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\omard\Desktop\Api RVM 2.0\ApiRVM\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\omard\Desktop\Api RVM 2.0\ApiRVM\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\omard\Desktop\Api RVM 2.0\ApiRVM\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\omard\Desktop\Api RVM 2.0\ApiRVM\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Users\omard\Desktop\Api RVM 2.0\ApiRVM\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\omard\Desktop\Api RVM 2.0\ApiRVM\obj\Debug\netcoreapp3.1\ApiRVM2019.csproj.AssemblyReference.cache
+C:\Users\omard\Desktop\Api RVM 2.0\ApiRVM\obj\Debug\netcoreapp3.1\ApiRVM2019.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\omard\Desktop\Api RVM 2.0\ApiRVM\obj\Debug\netcoreapp3.1\ApiRVM2019.AssemblyInfoInputs.cache
+C:\Users\omard\Desktop\Api RVM 2.0\ApiRVM\obj\Debug\netcoreapp3.1\ApiRVM2019.AssemblyInfo.cs
+C:\Users\omard\Desktop\Api RVM 2.0\ApiRVM\obj\Debug\netcoreapp3.1\ApiRVM2019.csproj.CoreCompileInputs.cache
+C:\Users\omard\Desktop\Api RVM 2.0\ApiRVM\obj\Debug\netcoreapp3.1\ApiRVM2019.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\omard\Desktop\Api RVM 2.0\ApiRVM\obj\Debug\netcoreapp3.1\staticwebassets\ApiRVM2019.StaticWebAssets.Manifest.cache
+C:\Users\omard\Desktop\Api RVM 2.0\ApiRVM\obj\Debug\netcoreapp3.1\staticwebassets\ApiRVM2019.StaticWebAssets.xml
+C:\Users\omard\Desktop\Api RVM 2.0\ApiRVM\obj\Debug\netcoreapp3.1\scopedcss\bundle\ApiRVM2019.styles.css
+C:\Users\omard\Desktop\Api RVM 2.0\ApiRVM\obj\Debug\netcoreapp3.1\ApiRVM2019.RazorTargetAssemblyInfo.cache
+C:\Users\omard\Desktop\Api RVM 2.0\ApiRVM\obj\Debug\netcoreapp3.1\ApiRVM2019.csproj.CopyComplete
+C:\Users\omard\Desktop\Api RVM 2.0\ApiRVM\obj\Debug\netcoreapp3.1\ApiRVM2019.dll
+C:\Users\omard\Desktop\Api RVM 2.0\ApiRVM\obj\Debug\netcoreapp3.1\ApiRVM2019.pdb
+C:\Users\omard\Desktop\Api RVM 2.0\ApiRVM\obj\Debug\netcoreapp3.1\ApiRVM2019.genruntimeconfig.cache
