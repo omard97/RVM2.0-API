@@ -300,8 +300,6 @@ C:\Users\omard\Desktop\ApiRVM\obj\Debug\netcoreapp3.1\ApiRVM2019.AssemblyInfo.cs
 C:\Users\omard\Desktop\ApiRVM\obj\Debug\netcoreapp3.1\ApiRVM2019.csproj.CoreCompileInputs.cache
 C:\Users\omard\Desktop\ApiRVM\obj\Debug\netcoreapp3.1\ApiRVM2019.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\omard\Desktop\ApiRVM\obj\Debug\netcoreapp3.1\staticwebassets\ApiRVM2019.StaticWebAssets.Manifest.cache
-C:\Users\omard\Desktop\ApiRVM\obj\Debug\netcoreapp3.1\staticwebassets\ApiRVM2019.StaticWebAssets.xml
-C:\Users\omard\Desktop\ApiRVM\obj\Debug\netcoreapp3.1\scopedcss\bundle\ApiRVM2019.styles.css
 C:\Users\omard\Desktop\ApiRVM\obj\Debug\netcoreapp3.1\ApiRVM2019.RazorTargetAssemblyInfo.cache
 C:\Users\omard\Desktop\ApiRVM\obj\Debug\netcoreapp3.1\ApiRVM2019.csproj.CopyComplete
 C:\Users\omard\Desktop\ApiRVM\obj\Debug\netcoreapp3.1\ApiRVM2019.dll
@@ -369,3 +367,5 @@ C:\Users\omard\Desktop\Api RVM 2.0\ApiRVM\obj\Debug\netcoreapp3.1\ApiRVM2019.csp
 C:\Users\omard\Desktop\Api RVM 2.0\ApiRVM\obj\Debug\netcoreapp3.1\ApiRVM2019.dll
 C:\Users\omard\Desktop\Api RVM 2.0\ApiRVM\obj\Debug\netcoreapp3.1\ApiRVM2019.pdb
 C:\Users\omard\Desktop\Api RVM 2.0\ApiRVM\obj\Debug\netcoreapp3.1\ApiRVM2019.genruntimeconfig.cache
+C:\Users\omard\Desktop\ApiRVM\obj\Debug\netcoreapp3.1\staticwebassets\ApiRVM2019.StaticWebAssets.xml
+C:\Users\omard\Desktop\ApiRVM\obj\Debug\netcoreapp3.1\scopedcss\bundle\ApiRVM2019.styles.css
