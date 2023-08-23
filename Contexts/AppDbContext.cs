@@ -51,6 +51,7 @@ namespace ApiRVM2019.Contexts
 
         // Login
         public DbSet<Entities.Login.V_ultimaSesionDelUsuario> V_ultimaSesionDelUsuario { get; set; }
+        public DbSet<Entities.Login.v_listaUsuariosNick> V_listaUsuariosNick { get; set; }
 
     }
 }
