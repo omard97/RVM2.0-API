@@ -60,7 +60,7 @@ namespace ApiRVM2019.Controllers.ActualizarReclamoController
                                    Hora = reclamo.Hora,
                                    IDSesion = reclamo.ID_Sesion,
 
-                                   Nombre = estado.Nombre,
+                                   estadoR = estado.Nombre,
                                    IDEstado = estado.IDEstado,
 
                                    NombreTRec = TipoReclamo.Nombre,
