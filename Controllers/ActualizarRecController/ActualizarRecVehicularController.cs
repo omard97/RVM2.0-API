@@ -86,7 +86,17 @@ namespace ApiRVM2019.Controllers.ActualizarRecController
                                           NombreRecAmbiental = ReclamoAmbiental.Nombre, //quema de arboles, unundaciones, etc
                                           Dominio = DetalleReclamo.Dominio,
                                           Nick = usuario.Nick,
-                                          Foto = reclamo.Foto
+                                          Foto = reclamo.Foto,
+
+                                           
+                                          Longitud = DetalleReclamo.longitud,
+                                          Latitud = DetalleReclamo.latitud,
+                                          
+
+                                          estadoR = estado.Nombre,
+                                          IDEstado = estado.IDEstado,
+
+                                         
 
                                           //idVehiculoxDetalle = VehiculoXDetalleReclamo.IDVehiculoXDetalle,
                                           //id_vehiculo = VehiculoXDetalleReclamo.ID_Vehiculo,

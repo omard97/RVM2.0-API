@@ -47,6 +47,8 @@ namespace ApiRVM2019.Controllers.FiltrosHistorialController
                                    Latitud = DetalleReclamo.latitud,
                                    Direccion = DetalleReclamo.Direccion,
                                    ID_Reclamo = DetalleReclamo.ID_Reclamo,
+                                   idReclamo = reclamo.IDReclamo,
+                                   id_sesion = reclamo.ID_Sesion,
                                    Fecha = reclamo.Fecha,
                                    Hora = reclamo.Hora,
                                    Nombre = estado.Nombre,
@@ -56,7 +58,9 @@ namespace ApiRVM2019.Controllers.FiltrosHistorialController
                                    IDRecAmb = ReclamoAmbiental.IDReclamoAmbiental,
                                    NombreRecAmbiental = ReclamoAmbiental.Nombre, //quema de arboles, unundaciones, etc
                                    Nick = usuario.Nick,
-                                   Foto = reclamo.Foto
+                                   Foto = reclamo.Foto,
+                                   dominio = DetalleReclamo.Dominio
+
                                }).OrderByDescending(ID => ID.ID_Reclamo);
 
 
