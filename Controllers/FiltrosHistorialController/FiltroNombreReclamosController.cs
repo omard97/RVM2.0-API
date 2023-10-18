@@ -59,8 +59,10 @@ namespace ApiRVM2019.Controllers.FiltrosHistorialController
                                    NombreRecAmbiental = ReclamoAmbiental.Nombre, //quema de arboles, unundaciones, etc
                                    Nick = usuario.Nick,
                                    Foto = reclamo.Foto,
-                                   dominio = DetalleReclamo.Dominio
-
+                                   dominio = DetalleReclamo.Dominio,
+                                    marca = "",
+                                   color = "",
+                                   modelo = ""
                                }).OrderByDescending(ID => ID.ID_Reclamo);
 
 
