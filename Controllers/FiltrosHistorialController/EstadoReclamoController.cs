@@ -25,7 +25,28 @@ namespace ApiRVM2019.Controllers.FiltrosHistorialController
         }
         // GET: api/<EstadoReclamoController>
         [HttpGet]
-        
+        public IActionResult Get(int id)
+        {
+            var _estado = from Estado in context.Estado
+                          join TipoEstado in context.TipoEstado on Estado.ID_TipoEstado equals TipoEstado.IDTipoEstado
+                          where TipoEstado.IDTipoEstado == id && (Estado.IDEstado != 14 && Estado.IDEstado != 13)
+                          select new
+                          {
+                              idEstado = Estado.IDEstado,
+                              estadoNombre = Estado.Nombre,
+                              idTipoEstado = TipoEstado.IDTipoEstado,
+                              tipoEstadoNombre = TipoEstado.nombre,
+                              
+                          };
+            if (_estado.Count() == 0)
+            {
+                var mensajeError = "No se encontró ningún estado de reclamo";
+                return NotFound(mensajeError);
+            }
+
+            return Ok(_estado);
+        }
+
         //public IActionResult GetEReclamo(int id)
         //{
         //    var _EstadoRec = (from estado in context.Estado
