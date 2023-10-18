@@ -42,6 +42,7 @@ namespace ApiRVM2019.Controllers.Historial
                                    join ReclamoAmbiental in context.ReclamoAmbiental on DetalleReclamo.ID_ReclamoAmbiental equals ReclamoAmbiental.IDReclamoAmbiental
                                    join sesion in context.Sesion on reclamo.ID_Sesion equals sesion.IDSesion
                                    join usuario in context.Usuario on sesion.ID_Usuario equals usuario.IDUsuario
+                                  
                                    where reclamo.Fecha == fechaHoy && (reclamo.ID_Estado == idEstadoA || reclamo.ID_Estado == idEstadoV) // 1 pendiente ambiental y 5 pendiente vial
                                    select new
                                    {
@@ -65,7 +66,9 @@ namespace ApiRVM2019.Controllers.Historial
                                        NombreRecAmbiental = ReclamoAmbiental.Nombre, //quema de arboles, unundaciones, etc
                                        Nick = usuario.Nick,
                                        Foto = reclamo.Foto,
-                                       
+                                       marca = "",
+                                       color = "",
+                                       modelo = ""
                                    }).OrderByDescending(ID => ID.ID_Reclamo);
 
                 if (_DetReclamo == null)
@@ -107,7 +110,10 @@ namespace ApiRVM2019.Controllers.Historial
                                        IDRecAmb = ReclamoAmbiental.IDReclamoAmbiental,
                                        NombreRecAmbiental = ReclamoAmbiental.Nombre, //quema de arboles, unundaciones, etc
                                        Nick = usuario.Nick,
-                                       Foto = reclamo.Foto
+                                       Foto = reclamo.Foto,
+                                       marca = "",
+                                       color = "",
+                                       modelo = ""
                                    }).OrderByDescending(ID => ID.ID_Reclamo);
 
 
