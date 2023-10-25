@@ -28,9 +28,11 @@ namespace ApiRVM2019.Controllers
         [HttpGet]
         public IActionResult GetTipoEstados()
         {
+            //utilizado para el select del historial - tipo reclamo/estado
             var _tipoestados = from TipoEstado in context.TipoEstado
                                           select new
                                           {
+                                              idTipoEstado = TipoEstado.IDTipoEstado,
                                               NombreTipoEstado=TipoEstado.nombre
                                           };
             if(_tipoestados==null)
@@ -61,9 +63,10 @@ namespace ApiRVM2019.Controllers
         {
             try
             {
-                context.TipoEstado.Add(tipoEstado);
+                var TipEstado = context.TipoEstado.Add(tipoEstado);
                 context.SaveChanges();
-                return Ok();
+                tipoEstado.IDTipoEstado = TipEstado.Entity.IDTipoEstado;
+                return Ok(tipoEstado);
             }
             catch (Exception ex)
             {
