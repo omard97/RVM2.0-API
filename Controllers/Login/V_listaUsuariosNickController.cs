@@ -38,7 +38,8 @@ namespace ApiRVM2019.Controllers.Login
                        {
                            idUsuario = V_listaUsuariosNickController.IDUsuario,
                            nick = V_listaUsuariosNickController.Nick,
-                           correo = V_listaUsuariosNickController.Correo
+                           correo = V_listaUsuariosNickController.Correo,
+                           id_Estado = V_listaUsuariosNickController.ID_Estado
 
                        };
             if (_Usuario == null)
