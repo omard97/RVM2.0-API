@@ -33,7 +33,8 @@ namespace ApiRVM2019.Controllers
             var _sesion = from Usuario in context.Usuario
                           join Estado in context.Estado on Usuario.ID_Estado equals Estado.IDEstado
                           join Perfil in context.Perfil on Usuario.ID_Perfil equals Perfil.IDPerfil
-                          where Usuario.Correo == email && Usuario.Contrasenia == password
+                          where Usuario.Correo == email && Usuario.Contrasenia == password && Usuario.ID_Estado ==9
+                          //validar con el estado activo, si esta activo es que no quiso eliminar su cuenta
                           select new
                            {
                                    CorreoUsuario = Usuario.Correo,
