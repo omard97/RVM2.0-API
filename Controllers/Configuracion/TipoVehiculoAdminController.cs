@@ -7,7 +7,6 @@ using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using ApiRVM2019.Contexts;
 using ApiRVM2019.Entities;
-
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
 namespace ApiRVM2019.Controllers.Configuracion
@@ -18,7 +17,6 @@ namespace ApiRVM2019.Controllers.Configuracion
     public class TipoVehiculoAdminController : ControllerBase
     {
         private readonly AppDbContext context;
-
         public TipoVehiculoAdminController(AppDbContext context)
         {
             this.context = context;
@@ -46,38 +44,53 @@ namespace ApiRVM2019.Controllers.Configuracion
         [HttpGet("{idTipoVehiculo}")]
         public IActionResult Get(int idTipoVehiculo)
         {
-            //se buscan los tipos de vehiculos segun el que se haya seleccionado
-            var dato = from Vehiculo in context.Vehiculo
-                       join TipoVehiculo in context.TipoVehiculo on Vehiculo.ID_TipoVehiculo equals TipoVehiculo.IDTipoVehiculo
-                       join MarcaVehiculo in context.MarcaVehiculo on Vehiculo.ID_MarcaVehiculo equals MarcaVehiculo.IDMarca
-                       
-                       join ModeloVehiculo in context.ModeloVehiculo on Vehiculo.ID_Modelo equals ModeloVehiculo.IDModelo
-                       join Estado in context.Estado on Vehiculo.ID_Estado equals Estado.IDEstado
-                       where Vehiculo.ID_TipoVehiculo==idTipoVehiculo
+            //obtengo el tipo de vehiculo que deseo modificar
+            var data = from TipoVehiculo in context.TipoVehiculo
+                       where TipoVehiculo.IDTipoVehiculo ==idTipoVehiculo
                        select new
                        {
-                           idVehiculo = Vehiculo.IDVehiculo,
-                           dominio = Vehiculo.Dominio,
-                           color = Vehiculo.Color,
-                           chasis = Vehiculo.NumeroChasis,
-                           numMotor = Vehiculo.NumeroMotor,
-                           id_TipoVehiculo = Vehiculo.ID_TipoVehiculo,
-                           id_Estado = Vehiculo.ID_Estado,
-                           id_MarcaVehiculo = Vehiculo.ID_MarcaVehiculo,
-
-
-                           nombreTipoVehiculo = TipoVehiculo.Nombre,
-                           marcaAuto = MarcaVehiculo.Nombre,
-                           id_ModeloV = ModeloVehiculo.IDModelo,
-                           nombreModelo = ModeloVehiculo.Nombre,
-                           nombreEstado = Estado.Nombre,
+                           idTipoVehiculo = TipoVehiculo.IDTipoVehiculo,
+                           nombre = TipoVehiculo.Nombre,
+                           descripcion = TipoVehiculo.Descripcion
                        };
-            if (dato == null)
+            if (data == null)
             {
                 return NotFound();
             }
 
-            return Ok(dato);
+            return Ok(data);
+            //se buscan los tipos de vehiculos segun el que se haya seleccionado
+            //var dato = from Vehiculo in context.Vehiculo
+            //           join TipoVehiculo in context.TipoVehiculo on Vehiculo.ID_TipoVehiculo equals TipoVehiculo.IDTipoVehiculo
+            //           join MarcaVehiculo in context.MarcaVehiculo on Vehiculo.ID_MarcaVehiculo equals MarcaVehiculo.IDMarca
+
+            //           join ModeloVehiculo in context.ModeloVehiculo on Vehiculo.ID_Modelo equals ModeloVehiculo.IDModelo
+            //           join Estado in context.Estado on Vehiculo.ID_Estado equals Estado.IDEstado
+            //           where Vehiculo.ID_TipoVehiculo==idTipoVehiculo
+            //           select new
+            //           {
+            //               idVehiculo = Vehiculo.IDVehiculo,
+            //               dominio = Vehiculo.Dominio,
+            //               color = Vehiculo.Color,
+            //               chasis = Vehiculo.NumeroChasis,
+            //               numMotor = Vehiculo.NumeroMotor,
+            //               id_TipoVehiculo = Vehiculo.ID_TipoVehiculo,
+            //               id_Estado = Vehiculo.ID_Estado,
+            //               id_MarcaVehiculo = Vehiculo.ID_MarcaVehiculo,
+
+
+            //               nombreTipoVehiculo = TipoVehiculo.Nombre,
+            //               marcaAuto = MarcaVehiculo.Nombre,
+            //               id_ModeloV = ModeloVehiculo.IDModelo,
+            //               nombreModelo = ModeloVehiculo.Nombre,
+            //               nombreEstado = Estado.Nombre,
+            //           };
+            //if (dato == null)
+            //{
+            //    return NotFound();
+            //}
+
+            //return Ok(dato);
         }
 
         // POST api/<TipoVehiculoAdminController>
