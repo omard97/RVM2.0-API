@@ -12,5 +12,6 @@ namespace ApiRVM2019.Entities.Login
         public int IDUsuario { get; set; }
         public string Nick { get; set; }
         public string Correo { get; set; }
+        public int ID_Estado { get; set; }
     }
 }
