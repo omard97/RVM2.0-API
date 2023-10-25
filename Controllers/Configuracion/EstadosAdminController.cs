@@ -48,19 +48,45 @@ namespace ApiRVM2019.Controllers.Configuracion
 
         // GET api/<EstadosAdminController>/5
         [HttpGet("{id}")]
-        public string Get(int id)
+        public IActionResult Get(int id)
         {
-            return "value";
+            var _estado = from Estado in context.Estado
+                          join TipoEstado in context.TipoEstado on Estado.ID_TipoEstado equals TipoEstado.IDTipoEstado
+                          where TipoEstado.IDTipoEstado == id && (Estado.IDEstado != 14 && Estado.IDEstado != 13)
+                          select new
+                          {
+                              idEstado = Estado.IDEstado,
+                              estadoNombre = Estado.Nombre,
+                              idTipoEstado = TipoEstado.IDTipoEstado,
+                              tipoEstadoNombre = TipoEstado.nombre,
+
+                          };
+            if (_estado.Count() == 0)
+            {
+                var mensajeError = "No se encontró ningún estado de reclamo";
+                return NotFound(mensajeError);
+            }
+
+            return Ok(_estado);
         }
 
         // POST api/<EstadosAdminController>
         [HttpPost]
         public ActionResult PostEstado([FromBody] Estado objEstado)
         {
+            Estado est = new Estado();
+
+            string [] listaEstados = new string[] { "Pendiente", "En Revisión", "Solucionado", "Descartado" };
             try
             {
-                var PEstado = context.Estado.Add(objEstado);
-                context.SaveChanges();
+                
+                for (int i = 0; i < 4; i++)
+                {
+                    objEstado.IDEstado = 0;
+                    objEstado.Nombre = listaEstados[i];
+                    var PEstado = context.Estado.Add(objEstado);
+                    context.SaveChanges();
+                }
 
                 //reclamo.IDReclamo = recl.Entity.IDReclamo;
 
