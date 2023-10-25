@@ -62,8 +62,9 @@ namespace ApiRVM2019.Controllers.Configuracion
                 context.SaveChanges();
 
                 //reclamo.IDReclamo = recl.Entity.IDReclamo;
+                tipoEstado.IDTipoEstado = TipEstado.Entity.IDTipoEstado;
 
-                return Ok(TipEstado);
+                return Ok(tipoEstado);
             }
             catch (Exception ex)
             {
