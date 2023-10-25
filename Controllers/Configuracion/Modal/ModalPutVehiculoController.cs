@@ -78,8 +78,26 @@ namespace ApiRVM2019.Controllers.Configuracion.Modal
 
         // PUT api/<ModalPutVehiculoController>/5
         [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
+        public async Task<ActionResult<Usuario>> actualizarUsuario(int id, [FromBody] Vehiculo item)
         {
+            if (item.IDVehiculo == id)
+            {
+                context.Entry(item).State = EntityState.Modified;
+                context.SaveChanges();
+            }
+            else if (id != item.IDVehiculo)
+            {
+                return BadRequest();
+            }
+
+            var result = await context.Vehiculo.FindAsync(id);
+
+            if (result == null)
+            {
+                return NotFound();
+            }
+
+            return NoContent();
         }
 
         // DELETE api/<ModalPutVehiculoController>/5
