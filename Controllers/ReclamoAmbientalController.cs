@@ -27,7 +27,8 @@ namespace ApiRVM2019.Controllers
         public IActionResult Get()
         {
             //Agregar a la consulta la parte del inner join cuando este lista la parte de Perfil y Estado
-            var _ReclamoAmbiental = from ReclamoAmbiental in context.ReclamoAmbiental                          
+            var _ReclamoAmbiental = from ReclamoAmbiental in context.ReclamoAmbiental
+                                    where ReclamoAmbiental.IDReclamoAmbiental !=12
                            select new
                            {
                                IDReclamoAmbiental = ReclamoAmbiental.IDReclamoAmbiental,
