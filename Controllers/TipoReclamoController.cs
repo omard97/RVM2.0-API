@@ -28,6 +28,7 @@ namespace ApiRVM2019.Controllers
 		[HttpGet]
 		public IActionResult Get()
 		{
+			//utilizado para traer los tipos de reclamo cuando se quiere cambiar el estado del reclamo - administrador
 			var _TipoR = from TipoReclamo in context.TipoReclamo
 						   select TipoReclamo;
 

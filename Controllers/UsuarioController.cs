@@ -60,7 +60,7 @@ namespace ApiRVM2019.Controllers
 		[HttpGet("{id}")]
 		public async Task<ActionResult<Usuario>> GetUsuario(int id)
 		{
-			//utilizado cuando quiero ver mi perfil
+			//utilizado cuando quiero ver mi perfil - en boton perfil de la barra del menu
 			var _usuario = from Usuario in context.Usuario
 						   join Estado in context.Estado on Usuario.ID_Estado equals Estado.IDEstado
 						   join Perfil in context.Perfil on Usuario.ID_Perfil equals Perfil.IDPerfil
