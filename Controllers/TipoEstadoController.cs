@@ -28,8 +28,9 @@ namespace ApiRVM2019.Controllers
         [HttpGet]
         public IActionResult GetTipoEstados()
         {
-            //utilizado para el select del historial - tipo reclamo/estado
+            //utilizado para el select del historial y Mapa - tipo reclamo/estado
             var _tipoestados = from TipoEstado in context.TipoEstado
+                               where TipoEstado.IDTipoEstado == 1 || TipoEstado.IDTipoEstado == 2
                                           select new
                                           {
                                               idTipoEstado = TipoEstado.IDTipoEstado,
