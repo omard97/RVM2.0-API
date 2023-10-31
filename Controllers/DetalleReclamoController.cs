@@ -18,7 +18,6 @@ namespace ApiRVM2019.Controllers
     public class DetalleReclamoController : ControllerBase
     {
         private readonly AppDbContext context;
-
         public DetalleReclamoController(AppDbContext context)
         {
             this.context = context;
