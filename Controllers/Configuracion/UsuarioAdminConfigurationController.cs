@@ -33,7 +33,8 @@ namespace ApiRVM2019.Controllers.Configuracion
             var dataUsuario =( from Usuario in DBContext.Usuario
                               join Estado in DBContext.Estado on Usuario.ID_Estado equals Estado.IDEstado
                               join TipoEstado in DBContext.TipoEstado on Estado.ID_TipoEstado equals TipoEstado.IDTipoEstado
-                              select new
+                               orderby  Usuario.ID_Estado
+                               select new
                               {
                                   idUsuario = Usuario.IDUsuario,
                                   nombreUsuario = Usuario.Nombre,
@@ -51,7 +52,7 @@ namespace ApiRVM2019.Controllers.Configuracion
 
 
 
-                              }).OrderBy(nombre => nombre.nombreUsuario);
+                              });
             if (dataUsuario.Count() == 0)
             {
                 var mensajeError = "No se encontró ningún usuario";

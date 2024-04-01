@@ -60,18 +60,19 @@ namespace ApiRVM2019.Controllers.Configuracion
             
         }
 
-        
+
         // GET api/<usuarioFiltroadminController>/5
-        [HttpGet("{nombreU}/{nickU}/{idEstadoU}")]
-        public IActionResult Get(string nombreU, string nickU, int idEstadoU)
+        //https://localhost:44363/usuarioFiltroadmin/omar/omard97/9
+        [HttpGet("{nombreU}/{idEstadoU}")]
+        public IActionResult Get(string nombreU, int idEstadoU)
         {
             //utilizado en la pantalla de configuracion, cuando el administrador quiere buscar un usuario para poder cambiar su estado
-            if (nombreU!="" && nickU!=string.Empty && idEstadoU!=0 && (nombreU != null && nickU != null))
+            if (nombreU!="" && idEstadoU!=0 && (nombreU != null))
             {
                 var dataUsuario = (from Usuario in Dbcontext.Usuario
                                    join Estado in Dbcontext.Estado on Usuario.ID_Estado equals Estado.IDEstado
                                    join TipoEstado in Dbcontext.TipoEstado on Estado.ID_TipoEstado equals TipoEstado.IDTipoEstado
-                                   where Usuario.Nombre == nombreU && Usuario.Nick == nickU && Estado.IDEstado == idEstadoU
+                                   where (Usuario.Nick.Contains(nombreU) || Usuario.Nombre.Contains(nombreU)) && Estado.IDEstado == idEstadoU
                                    //hacer validacion
                                    select new
                                    {
@@ -92,122 +93,18 @@ namespace ApiRVM2019.Controllers.Configuracion
 
 
                                    }).OrderBy(nombre => nombre.nombreUsuario);
-                if (dataUsuario.Count() == 0)
+                if (dataUsuario==null)
                 {
-                    var mensajeError = "No se encontró ningún usuario";
-                    return NotFound(mensajeError);
+                  
+                    return NotFound();
                 }
 
                 return Ok(dataUsuario);
-            }
-            else if(nombreU != "" && nickU == "" && idEstadoU != 0 &&  nickU==null)
-            {
-                //busco por nombre y estado - nick tiene que ser null
-                var dataUsuario = (from Usuario in Dbcontext.Usuario
-                                   join Estado in Dbcontext.Estado on Usuario.ID_Estado equals Estado.IDEstado
-                                   join TipoEstado in Dbcontext.TipoEstado on Estado.ID_TipoEstado equals TipoEstado.IDTipoEstado
-                                   where Usuario.Nombre == nombreU  && Estado.IDEstado == idEstadoU
-                                   //hacer validacion
-                                   select new
-                                   {
-                                       idUsuario = Usuario.IDUsuario,
-                                       nombreUsuario = Usuario.Nombre,
-                                       apellido = Usuario.Apellido,
-                                       telefono = Usuario.Celular,
-                                       dni = Usuario.DNI,
-                                       email = Usuario.Correo,
-                                       nick = Usuario.Nick,
-                                       foto = Usuario.Foto,
-
-                                       idEstado = Estado.IDEstado,
-                                       nombreEstado = Estado.Nombre,
-                                       idTipoEstado = TipoEstado.IDTipoEstado,
-                                       nombreTipoEstado = TipoEstado.nombre,
-
-
-
-                                   }).OrderBy(nombre => nombre.nombreUsuario);
-                if (dataUsuario.Count() == 0)
-                {
-                    var mensajeError = "No se encontró ningún usuario";
-                    return NotFound(mensajeError);
-                }
-
-                return Ok(dataUsuario);
-            }
-            else if (nombreU == "" && (nickU != "" && idEstadoU != 0))
-            {
-                //busco por nick y estado
-                var dataUsuario = (from Usuario in Dbcontext.Usuario
-                                   join Estado in Dbcontext.Estado on Usuario.ID_Estado equals Estado.IDEstado
-                                   join TipoEstado in Dbcontext.TipoEstado on Estado.ID_TipoEstado equals TipoEstado.IDTipoEstado
-                                   where Usuario.Nick == nickU && Estado.IDEstado == idEstadoU
-                                   //hacer validacion
-                                   select new
-                                   {
-                                       idUsuario = Usuario.IDUsuario,
-                                       nombreUsuario = Usuario.Nombre,
-                                       apellido = Usuario.Apellido,
-                                       telefono = Usuario.Celular,
-                                       dni = Usuario.DNI,
-                                       email = Usuario.Correo,
-                                       nick = Usuario.Nick,
-                                       foto = Usuario.Foto,
-
-                                       idEstado = Estado.IDEstado,
-                                       nombreEstado = Estado.Nombre,
-                                       idTipoEstado = TipoEstado.IDTipoEstado,
-                                       nombreTipoEstado = TipoEstado.nombre,
-
-
-
-                                   }).OrderBy(nombre => nombre.nombreUsuario);
-                if (dataUsuario.Count() == 0)
-                {
-                    var mensajeError = "No se encontró ningún usuario";
-                    return NotFound(mensajeError);
-                }
-
-                return Ok(dataUsuario);
-            }else if(nombreU == "" && (nickU != "" && idEstadoU != 0))
-            {
-                //busco por nombre y nick
-                var dataUsuario = (from Usuario in Dbcontext.Usuario
-                                   join Estado in Dbcontext.Estado on Usuario.ID_Estado equals Estado.IDEstado
-                                   join TipoEstado in Dbcontext.TipoEstado on Estado.ID_TipoEstado equals TipoEstado.IDTipoEstado
-                                   where Usuario.Nombre == nombreU && Usuario.Nick == nickU
-                                   //hacer validacion
-                                   select new
-                                   {
-                                       idUsuario = Usuario.IDUsuario,
-                                       nombreUsuario = Usuario.Nombre,
-                                       apellido = Usuario.Apellido,
-                                       telefono = Usuario.Celular,
-                                       dni = Usuario.DNI,
-                                       email = Usuario.Correo,
-                                       nick = Usuario.Nick,
-                                       foto = Usuario.Foto,
-
-                                       idEstado = Estado.IDEstado,
-                                       nombreEstado = Estado.Nombre,
-                                       idTipoEstado = TipoEstado.IDTipoEstado,
-                                       nombreTipoEstado = TipoEstado.nombre,
-
-
-
-                                   }).OrderBy(nombre => nombre.nombreUsuario);
-                if (dataUsuario.Count() == 0)
-                {
-                    var mensajeError = "No se encontró ningún usuario";
-                    return NotFound(mensajeError);
-                }
-
-                return Ok(dataUsuario);
-            }
+            }                 
             else
             {
-                var mensajeError = "No se encontró ningún usuario";
-                return NotFound(mensajeError);
+               
+                return NotFound();
             }
         }
 
@@ -218,9 +115,48 @@ namespace ApiRVM2019.Controllers.Configuracion
         }
 
         // PUT api/<usuarioFiltroadminController>/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
+        [HttpPut("{idUsuario}")]
+        public async Task<ActionResult<Usuario>> actualizarReclamo(int idUsuario, [FromBody] Usuario item)
         {
+            if (idUsuario != item.IDUsuario)
+            {
+                return BadRequest();
+            }
+
+            var usu = await this.Dbcontext.Usuario.FindAsync(idUsuario);
+
+            if (usu == null)
+            {
+                return NotFound();
+            }
+
+            // Actualizar solo los campos que han cambiado
+            usu.ID_Estado = item.ID_Estado;
+            // Repite este bloque para cada campo que pueda ser actualizado
+
+            try
+            {
+                await Dbcontext.SaveChangesAsync();
+            }
+            catch (DbUpdateConcurrencyException)
+            {
+                if (!UsuarioExists(idUsuario))
+                {
+                    return NotFound();
+                }
+                else
+                {
+                    throw;
+                }
+            }
+
+            return NoContent();
+
+        }
+
+        private bool UsuarioExists(int idUsu)
+        {
+            return Dbcontext.Usuario.Any(e => e.IDUsuario == idUsu);
         }
 
         // DELETE api/<usuarioFiltroadminController>/5

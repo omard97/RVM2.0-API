@@ -29,7 +29,8 @@ namespace ApiRVM2019.Contexts
         public DbSet<MarcaVehiculo> MarcaVehiculo { get; set; }
         public DbSet<ModeloVehiculo> ModeloVehiculo { get; set; }
         public DbSet<TipoVehiculo> TipoVehiculo { get; set; }
-        
+        public DbSet<Entities.Localidades.Localidad> Localidad { get; set; }
+        public DbSet<Pais> Pais { get; set; }
 
         //Dashboard
         public DbSet<V_CantidadxEstado> V_CantidadxEstado {get; set;}
@@ -56,5 +57,9 @@ namespace ApiRVM2019.Contexts
         //Reclamo
         public DbSet<Entities.VistaReclamo.v_estadoPendiente> V_EstadoPendiente { get; set; }
 
+        //Estadisticas
+        public DbSet<Entities.Estadistica.VE_ReclamosXLocalidad> VE_ReclamosXLocalidad { get; set; }
+
+        public DbSet<Entities.Estadistica.VE_ReclamosLocalidadXCalle> VE_ReclamosLocalidadXCalle { get; set; }
     }
 }

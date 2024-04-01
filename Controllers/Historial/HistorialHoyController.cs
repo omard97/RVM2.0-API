@@ -43,7 +43,8 @@ namespace ApiRVM2019.Controllers.Historial
                                    join sesion in context.Sesion on reclamo.ID_Sesion equals sesion.IDSesion
                                    join usuario in context.Usuario on sesion.ID_Usuario equals usuario.IDUsuario
                                   
-                                   where reclamo.Fecha == fechaHoy && (reclamo.ID_Estado == idEstadoA || reclamo.ID_Estado == idEstadoV) // 1 pendiente ambiental y 5 pendiente vial
+                                   where reclamo.Fecha == fechaHoy && (estado.Nombre == "Pendiente") // 1 pendiente ambiental y 5 pendiente vial
+                                   //reclamo.ID_Estado == idEstadoA || reclamo.ID_Estado == idEstadoV
                                    select new
                                    {
                                        IDDetalleReclamo = DetalleReclamo.IDDetalleReclamo,
@@ -88,7 +89,8 @@ namespace ApiRVM2019.Controllers.Historial
                                    join sesion in context.Sesion on reclamo.ID_Sesion equals sesion.IDSesion
                                    join usuario in context.Usuario on sesion.ID_Usuario equals usuario.IDUsuario
                                    where reclamo.Fecha == fechaHoy && sesion.ID_Usuario==idUsuario &&
-                                   (reclamo.ID_Estado == idEstadoA || reclamo.ID_Estado == idEstadoV)  // 1 pendiente ambiental y 5 pendiente vial
+                                   (estado.Nombre=="Pendiente")  // 1 pendiente ambiental y 5 pendiente vial
+                                   //(reclamo.ID_Estado == idEstadoA || reclamo.ID_Estado == idEstadoV) 
                                    select new
                                    {
                                        IDDetalleReclamo = DetalleReclamo.IDDetalleReclamo,
