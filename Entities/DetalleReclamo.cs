@@ -20,5 +20,6 @@ namespace ApiRVM2019.Entities
         public string longitud { get;  set; }
 
         public string latitud { get; set; }
+        public int ID_Localidad { get; set; }
     }
 }

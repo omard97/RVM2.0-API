@@ -50,10 +50,27 @@ namespace ApiRVM2019.Controllers
         }
 
         // GET api/<LocalidadController>/5
-        [HttpGet("{id}")]
-        public string Get(int id)
+        [HttpGet("{localidad}")]
+        public IActionResult GetLocalidad(string localidad)
         {
-            return "value";
+            var _datoLocalidad = from Localidad in context.Localidad
+                                 join Pais in context.Pais on Localidad.ID_Pais equals Pais.IDPais
+                                 where localidad.Contains(localidad)
+                                 select new
+                                 {
+                                     idLocalidad = Localidad.IDLocalidad,
+                                     Nombre = Localidad.Nombre,
+                                     Provincia = Localidad.Provincia,
+                                     pais = Pais.NombrePais,
+                                     IDPais = Localidad.ID_Pais,
+                                     ID_EstadoLocalidad = Localidad.ID_EstadoLocalidad
+                                 };
+            if (_datoLocalidad == null)
+            {
+                return NotFound();
+            }
+
+            return Ok(_datoLocalidad);
         }
 
         // POST api/<LocalidadController>

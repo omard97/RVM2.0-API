@@ -15,57 +15,57 @@ namespace ApiRVM2019.Controllers.Estadistica
     [EnableCors("All")]
     [Route("[controller]")]
     [ApiController]
-    public class VE_ReclamosXLocalidadesController : ControllerBase
+    public class EstPorcentajeCalleXLocalidadController : ControllerBase
     {
         private readonly AppDbContext context;
 
-        public VE_ReclamosXLocalidadesController (AppDbContext context)
+        public EstPorcentajeCalleXLocalidadController(AppDbContext context)
         {
             this.context = context;
         }
 
-        // GET: api/<VE_ReclamosXLocalidadesController>
+        // GET: api/<EstPorcentajeCalleXLocalidadController>
         [HttpGet]
         public IEnumerable<string> Get()
         {
             return new string[] { "value1", "value2" };
         }
 
-        // GET api/<VE_ReclamosXLocalidadesController>/5
+        // GET api/<EstPorcentajeCalleXLocalidadController>/5
         [HttpGet("{idUsuario}")]
-        public IActionResult Get(int idUsuario) 
+        public IActionResult GetDatos(int idUsuario)
         {
-            //https://localhost:44363/VE_ReclamosXLocalidades/2
+            //https://localhost:44363/EstPorcentajeCalleXLocalidad/2
             //Utilizada para mostrar las tarjetas de las cantidades de reclamos dependiendo de cada localidad de cordoba
             var _datos = from VE_ReclamosXLocalidadesController in context.VE_ReclamosXLocalidad
                          where VE_ReclamosXLocalidadesController.IDUsuario == idUsuario
                          select new
                          {
-                             IDLocalidad = VE_ReclamosXLocalidadesController.IDLocalidad,
-                             Localidad = VE_ReclamosXLocalidadesController.Localidad,                            
-                             Cantidad = VE_ReclamosXLocalidadesController.Cantidad,
-                             IDusuario = VE_ReclamosXLocalidadesController.IDUsuario
+                             
+                             name = VE_ReclamosXLocalidadesController.Localidad,
+                             value = VE_ReclamosXLocalidadesController.Cantidad,
+                             
                          };
-             if (_datos == null)
+            if (_datos == null)
             {
                 return NotFound();
             }
             return Ok(_datos);
         }
 
-        // POST api/<VE_ReclamosXLocalidadesController>
+        // POST api/<EstPorcentajeCalleXLocalidadController>
         [HttpPost]
         public void Post([FromBody] string value)
         {
         }
 
-        // PUT api/<VE_ReclamosXLocalidadesController>/5
+        // PUT api/<EstPorcentajeCalleXLocalidadController>/5
         [HttpPut("{id}")]
         public void Put(int id, [FromBody] string value)
         {
         }
 
-        // DELETE api/<VE_ReclamosXLocalidadesController>/5
+        // DELETE api/<EstPorcentajeCalleXLocalidadController>/5
         [HttpDelete("{id}")]
         public void Delete(int id)
         {
