@@ -35,22 +35,28 @@ namespace ApiRVM2019.Controllers.Estadistica
         [HttpGet("{idUsuario}")]
         public IActionResult Get(int idUsuario) 
         {
-            //https://localhost:44363/VE_ReclamosXLocalidades/2
-            //Utilizada para mostrar las tarjetas de las cantidades de reclamos dependiendo de cada localidad de cordoba
-            var _datos = from VE_ReclamosXLocalidadesController in context.VE_ReclamosXLocalidad
-                         where VE_ReclamosXLocalidadesController.IDUsuario == idUsuario
-                         select new
-                         {
-                             IDLocalidad = VE_ReclamosXLocalidadesController.IDLocalidad,
-                             Localidad = VE_ReclamosXLocalidadesController.Localidad,                            
-                             Cantidad = VE_ReclamosXLocalidadesController.Cantidad,
-                             IDusuario = VE_ReclamosXLocalidadesController.IDUsuario
-                         };
-             if (_datos == null)
-            {
-                return NotFound();
-            }
-            return Ok(_datos);
+            
+            
+                //va a ser el usuario comun
+                //Crear otro controlador para el administrador
+                //https://localhost:44363/VE_ReclamosXLocalidades/2
+                //Utilizada para mostrar las tarjetas de las cantidades de reclamos dependiendo de cada localidad de cordoba
+                var _datos = from VE_ReclamosXLocalidadesController in context.VE_ReclamosXLocalidad
+                             where VE_ReclamosXLocalidadesController.IDUsuario == idUsuario
+                             select new
+                             {
+                                 IDLocalidad = VE_ReclamosXLocalidadesController.IDLocalidad,
+                                 Localidad = VE_ReclamosXLocalidadesController.Localidad,
+                                 Cantidad = VE_ReclamosXLocalidadesController.Cantidad,
+                                 IDusuario = VE_ReclamosXLocalidadesController.IDUsuario
+                             };
+                if (_datos == null)
+                {
+                    return NotFound();
+                }
+                return Ok(_datos);
+            
+            
         }
 
         // POST api/<VE_ReclamosXLocalidadesController>

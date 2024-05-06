@@ -64,5 +64,8 @@ namespace ApiRVM2019.Contexts
         public DbSet<Entities.Estadistica.VE_CallesXlocalidad2>VE_CallesXlocalidad2 { get; set; } // no se usa
 
         public DbSet<Entities.Estadistica.V_EstadisticaXmes> V_EstadisticaXmes { get; set; }
+        public DbSet<Entities.Estadistica.V_ReclamosEnLaSemana> v_ReclamosEnLaSemana { get; set; }
+
+        public DbSet<Entities.Estadistica.V_CantidadTipoReclamoDelMes> V_CantidadTipoReclamoDelMes { get; set; }
     }
 }
