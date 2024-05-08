@@ -31,22 +31,54 @@ namespace ApiRVM2019.Controllers.Estadistica
 
             //cuando se selecciona el mes en el grafico buscara los reclamos de ese mes, de ese año y de ese usuario por el nombre del mes
             // ejemplo URL: https://localhost:44363/v_ReclamosEnLaSemana?idRol=3&idUsuario=2&nombreMes=Mayo&anio=2024
-            var info = (from recSemana in context.v_ReclamosEnLaSemana
-                        where recSemana.NombreMes.Contains(nombreMes) && recSemana.anio == anio
-                        && recSemana.idusuario == idUsuario
-                        group recSemana by new { recSemana.DiaDeLaSemana, recSemana.numeroDia } into g
-                        select new
-                        {
-                            name = g.Key.DiaDeLaSemana,
-                            value = g.Sum(x => x.CantidadReclamos),
-                            numero = g.Key.numeroDia
-                        }).OrderBy(numeroDia => numeroDia.numero);
+           
 
-            if (info == null)
+
+            if(idRol == 1)
             {
+                var info = (from recSemana in context.v_ReclamosEnLaSemana
+                            where recSemana.NombreMes.Contains(nombreMes) && recSemana.anio == anio
+                         
+                            group recSemana by new { recSemana.DiaDeLaSemana, recSemana.numeroDia } into g
+                            select new
+                            {
+                                name = g.Key.DiaDeLaSemana,
+                                value = g.Sum(x => x.CantidadReclamos),
+                                numero = g.Key.numeroDia
+                            }).OrderBy(numeroDia => numeroDia.numero);
+
+                if (info == null)
+                {
+                    return NotFound();
+                }
+                return Ok(info);
+            }
+            else
+            {
+                if (idRol == 3)
+                {
+                    var info = (from recSemana in context.v_ReclamosEnLaSemana
+                                where recSemana.NombreMes.Contains(nombreMes) && recSemana.anio == anio
+                                && recSemana.idusuario == idUsuario
+                                group recSemana by new { recSemana.DiaDeLaSemana, recSemana.numeroDia } into g
+                                select new
+                                {
+                                    name = g.Key.DiaDeLaSemana,
+                                    value = g.Sum(x => x.CantidadReclamos),
+                                    numero = g.Key.numeroDia
+                                }).OrderBy(numeroDia => numeroDia.numero);
+
+                    if (info == null)
+                    {
+                        return NotFound();
+                    }
+                    return Ok(info);
+                }
                 return NotFound();
             }
-            return Ok(info);
+
+
+
         }
 
         // GET api/<v_ReclamosEnLaSemanaController>/5
@@ -59,13 +91,14 @@ namespace ApiRVM2019.Controllers.Estadistica
                 //Administrador 
                 //va a mostrar todos los reclamos del mes actual y a la misma consulta tambien el mes que se selecciono
                 var info = (from recSemana in context.v_ReclamosEnLaSemana
-                                   where recSemana.Mes == mes && recSemana.anio == anio
-                                   select new
-                                   {
-                                       name = recSemana.DiaDeLaSemana,
-                                       value = recSemana.CantidadReclamos,
-                                       numero = recSemana.numeroDia
-                                   }).OrderBy(numeroDia => numeroDia.numero);
+                                where recSemana.Mes == mes && recSemana.anio == anio
+                                group recSemana by new { recSemana.DiaDeLaSemana, recSemana.numeroDia } into g
+                                select new
+                                {
+                                    name = g.Key.DiaDeLaSemana,
+                                    value = g.Sum(x => x.CantidadReclamos),
+                                    numero = g.Key.numeroDia
+                                }).OrderBy(numeroDia => numeroDia.numero);
 
 
                 if (info == null)
@@ -80,16 +113,15 @@ namespace ApiRVM2019.Controllers.Estadistica
                 {
                     //https://localhost:44363/v_ReclamosEnLaSemana/3/2/2/2024
                     var info = (from recSemana in context.v_ReclamosEnLaSemana
-                                       where recSemana.Mes == mes && recSemana.anio == anio
-                                             && recSemana.idusuario == idUsuario
-                                       select new
-                                       {
-                                           name = recSemana.DiaDeLaSemana,
-                                           value = recSemana.CantidadReclamos,
-                                           numero = recSemana.numeroDia
-                                       }).OrderBy(numeroDia => numeroDia.numero);
-
-
+                                    where recSemana.Mes == mes && recSemana.anio == anio
+                                    && recSemana.idusuario == idUsuario
+                                    group recSemana by new { recSemana.DiaDeLaSemana, recSemana.numeroDia } into g
+                                select new
+                                {
+                                    name = g.Key.DiaDeLaSemana,
+                                    value = g.Sum(x => x.CantidadReclamos),
+                                    numero = g.Key.numeroDia
+                                }).OrderBy(numeroDia => numeroDia.numero);
                     if (info == null)
                     {
                         return NotFound();
