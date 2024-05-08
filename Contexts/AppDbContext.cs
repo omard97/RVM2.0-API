@@ -67,5 +67,6 @@ namespace ApiRVM2019.Contexts
         public DbSet<Entities.Estadistica.V_ReclamosEnLaSemana> v_ReclamosEnLaSemana { get; set; }
 
         public DbSet<Entities.Estadistica.V_CantidadTipoReclamoDelMes> V_CantidadTipoReclamoDelMes { get; set; }
+        public DbSet<Entities.Estadistica.V_ReclamosEnElTiempo> V_ReclamosEnElTiempo { get; set; }
     }
 }
