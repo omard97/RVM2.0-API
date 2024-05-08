@@ -40,14 +40,16 @@ namespace ApiRVM2019.Controllers.Estadistica
             {
                 if((anio == null)|| anio == "")
                 {
-                    //todos los reclamos
-                    var dato = from reclamosXmes in context.V_EstadisticaXmes
-                               where reclamosXmes.anio == DateTime.Now.Year.ToString()
-                               select new
-                               {
-                                   name = reclamosXmes.NombreMes,
-                                   value = reclamosXmes.Cantidad
-                               };
+                    //todos los reclamos - historicos
+                    var dato = (from reclamosXmes in context.V_EstadisticaXmes
+                         
+                                group reclamosXmes by new { reclamosXmes.NombreMes, reclamosXmes.numeroMes } into m
+                                select new
+                                {
+                                    name = m.Key.NombreMes,
+                                    value = m.Sum(x => x.Cantidad),
+                                    numero = m.Key.numeroMes
+                                }).OrderBy(x => x.numero);
                     if (dato == null)
                     {
                         return NotFound();
@@ -58,18 +60,14 @@ namespace ApiRVM2019.Controllers.Estadistica
                 {
                     var dato = (from reclamosXmes in context.V_EstadisticaXmes
                                 where reclamosXmes.anio == anio
+                              
+                                group reclamosXmes by new { reclamosXmes.NombreMes, reclamosXmes.numeroMes } into m
                                 select new
                                 {
-                                    name = reclamosXmes.NombreMes,
-                                    value = reclamosXmes.Cantidad
-                                })
-                              .GroupBy(x => x.name)
-                              .Select(group => new
-                              {
-                                  name = group.Key,
-                                  Value = group.Sum(x => x.value)
-                              })
-                              .ToList();
+                                    name = m.Key.NombreMes,
+                                    value = m.Sum(x => x.Cantidad),
+                                    numero = m.Key.numeroMes
+                                }).OrderBy(x => x.numero);
 
                     if (dato == null)
                     {
@@ -81,17 +79,20 @@ namespace ApiRVM2019.Controllers.Estadistica
             else
             {
                 //Usuario
+                //https://localhost:44363/V_EstadisticaXmes/2/3/2024
                 if ((anio == null) || anio == "")
                 {
                     //todos los reclamos del usuario al ingreesar en pantalla
-                    var dato = from reclamosXmes in context.V_EstadisticaXmes
+                    var dato = (from reclamosXmes in context.V_EstadisticaXmes
                                where reclamosXmes.anio == DateTime.Now.Year.ToString() 
                                && reclamosXmes.IDUsuario == idUsuario
+                               group reclamosXmes by new { reclamosXmes.NombreMes, reclamosXmes.numeroMes } into m
                                select new
                                {
-                                   name = reclamosXmes.NombreMes,
-                                   value = reclamosXmes.Cantidad
-                               };
+                                   name = m.Key.NombreMes,
+                                   value = m.Sum(x => x.Cantidad),
+                                   numero = m.Key.numeroMes
+                               }).OrderBy(x => x.numero);
                     if (dato == null)
                     {
                         return NotFound();
@@ -101,20 +102,17 @@ namespace ApiRVM2019.Controllers.Estadistica
                 else
                 {
                     //cuando quiere filtrar por anio y con su usuario
+                    // por ahora esta cuando ingrea a la pantalla
                     var dato = (from reclamosXmes in context.V_EstadisticaXmes
-                               where reclamosXmes.anio == anio &&  reclamosXmes.IDUsuario == idUsuario
-                               select new
-                               {
-                                   name = reclamosXmes.NombreMes,
-                                   value = reclamosXmes.Cantidad
-                               })
-                              .GroupBy(x => x.name)
-                              .Select(group => new
-                              {
-                                  name = group.Key,
-                                  Value = group.Sum(x => x.value)
-                              })
-                              .ToList();
+                                where reclamosXmes.anio == anio && reclamosXmes.IDUsuario == idUsuario
+                                group reclamosXmes by new { reclamosXmes.NombreMes, reclamosXmes.numeroMes } into m
+                                select new
+                                {
+                                    name = m.Key.NombreMes,
+                                    value = m.Sum(x => x.Cantidad),
+                                    numero = m.Key.numeroMes
+                                }).OrderBy(x => x.numero);
+                              
                     if (dato == null)
                     {
                         return NotFound();
