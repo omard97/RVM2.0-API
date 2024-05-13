@@ -17,5 +17,6 @@ namespace ApiRVM2019.Entities.Estadistica
         public int anio { get; set; }
         public string numeroDia { get; set; }
         public int idusuario { get; set; }
+        public int ID_Localidad { get; set; } //Se agrego para el filtro
     }
 }
