@@ -60,7 +60,7 @@ namespace ApiRVM2019.Controllers.Estadistica
                                group vista by new { vista.Hora, vista.TipoHora} into g
                                select new
                                {
-                                   name = g.Key.Hora +' '+ g.Key.TipoHora ,
+                                   name = g.Key.Hora,
                                    value = g.Sum( x => x.CantidadReclamo),
                                };
                     if (data == null)
