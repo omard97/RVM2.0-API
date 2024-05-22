@@ -142,30 +142,35 @@ namespace ApiRVM2019.Controllers.Estadistica
         //}
 
         //----------------------------------------------------------------------
-        [HttpGet("{idLocalidad}/{idUsuario}")]
-        public IActionResult Get(int idLocalidad, int idUsuario)
+        [HttpGet("{idLocalidad}/{idUsuario}/{idrol}")]
+        public IActionResult Get(int idLocalidad, int idUsuario, int idrol)
         {
-            var _datos = from VeReclamosLocalidadXCalleController in context.VE_ReclamosLocalidadXCalle
-                         where VeReclamosLocalidadXCalleController.IDLocalidad == idLocalidad
-                         && VeReclamosLocalidadXCalleController.IDUsuario == idUsuario
-                         orderby VeReclamosLocalidadXCalleController.IDUsuario, VeReclamosLocalidadXCalleController.direccion
-                         select new
-                         {
-                             direccion = VeReclamosLocalidadXCalleController.direccion,
-                             altura = Convert.ToInt32(VeReclamosLocalidadXCalleController.altura),
-                             cantidad = Convert.ToInt32(VeReclamosLocalidadXCalleController.Cantidad),
-                         };
 
-            if (_datos == null)
+            if (idrol==1)
             {
-                return NotFound();
-            }
+                //administrador
+                //muestra todas las calles de esa localidad pero la maxima primero
+                var _datos = (from vista in context.VE_ReclamosLocalidadXCalle
+                             where vista.IDLocalidad == idLocalidad
+                             
+                             orderby vista.IDUsuario, vista.direccion
+                             select new
+                             {
+                                 direccion = vista.direccion,
+                                 altura = Convert.ToInt32(vista.altura),
+                                 cantidad = Convert.ToInt32(vista.Cantidad)
+                             });
 
-            // Crear la estructura de datos deseada
-            var response = new List<object>();
-            foreach (var dato in _datos)
-            {
-                var series = new List<object>
+                if (_datos == null)
+                {
+                    return NotFound();
+                }
+
+                // Crear la estructura de datos deseada
+                var response = new List<object>();
+                foreach (var dato in _datos)
+                {
+                    var series = new List<object>
                 {
                     new
                     {
@@ -175,14 +180,57 @@ namespace ApiRVM2019.Controllers.Estadistica
                     }
                 };
 
-                response.Add(new
-                {
-                    name = dato.direccion,
-                    series
-                });
-            }
+                    response.Add(new
+                    {
+                        name = dato.direccion,
+                        series
+                    });
+                }
 
-            return Ok(response);
+                return Ok(response);
+            }
+            else
+            {
+                var _datos = from VeReclamosLocalidadXCalleController in context.VE_ReclamosLocalidadXCalle
+                             where VeReclamosLocalidadXCalleController.IDLocalidad == idLocalidad
+                             && VeReclamosLocalidadXCalleController.IDUsuario == idUsuario
+                             orderby VeReclamosLocalidadXCalleController.IDUsuario, VeReclamosLocalidadXCalleController.direccion
+                             select new
+                             {
+                                 direccion = VeReclamosLocalidadXCalleController.direccion,
+                                 altura = Convert.ToInt32(VeReclamosLocalidadXCalleController.altura),
+                                 cantidad = Convert.ToInt32(VeReclamosLocalidadXCalleController.Cantidad),
+                             };
+
+                if (_datos == null)
+                {
+                    return NotFound();
+                }
+
+                // Crear la estructura de datos deseada
+                var response = new List<object>();
+                foreach (var dato in _datos)
+                {
+                    var series = new List<object>
+                {
+                    new
+                    {
+                        name = dato.altura.ToString(),
+                        value = dato.cantidad,
+                        extra = new { code = "de" }
+                    }
+                };
+
+                    response.Add(new
+                    {
+                        name = dato.direccion,
+                        series
+                    });
+                }
+
+                return Ok(response);
+            }
+           
         }
 
 
