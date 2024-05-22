@@ -30,26 +30,49 @@ namespace ApiRVM2019.Controllers.Estadistica
         }
 
         // GET api/<VE_CallesXlocalidad2Controller>/5
-        [HttpGet("{idUsuario}/{idLocalidad}")]
-        public IActionResult GetDatos(int idUsuario, int idLocalidad)
+        [HttpGet("{idUsuario}/{idLocalidad}/{idRol}")]
+        public IActionResult GetDatos(int idUsuario, int idLocalidad, int idRol)
         {
             //https://localhost:44363/VE_CallesXlocalidad2/2/1
             //uUtilizado para rellenar el segundo grafico de torta
             // visualiza todas las calles de esa localidad y saca un porsentaje de reclamos realizados en esa calle y localidad
-            var _datos = from grafico2 in context.VE_CallesXlocalidad2
-                         where grafico2.IDUsuario == idUsuario && grafico2.IDLocalidad == idLocalidad
-                         select new
-                         {
-
-                             name = grafico2.direccion,
-                             value = grafico2.Cantidad,
-
-                         };
-            if (_datos == null)
+            if (idRol==1)
             {
-                return NotFound();
+                var _datos = (from grafico2 in context.VE_CallesXlocalidad2
+                             where grafico2.IDLocalidad == idLocalidad
+                             group grafico2 by new {grafico2.direccion, grafico2.Cantidad} into d
+                             select new
+                             {
+
+                                 name = d.Key.direccion,
+                                 value = d.Sum(x => x.Cantidad)
+
+                             }).OrderByDescending(x => x.value);
+                if (_datos == null)
+                {
+                    return NotFound();
+                }
+                return Ok(_datos);
             }
-            return Ok(_datos);
+            else
+            {
+                var _datos = (from grafico2 in context.VE_CallesXlocalidad2
+                             where grafico2.IDUsuario == idUsuario && grafico2.IDLocalidad == idLocalidad
+                             group grafico2 by new { grafico2.direccion, grafico2.Cantidad } into d
+                             select new
+                             {
+
+                                 name = d.Key.direccion,
+                                 value = d.Sum(x => x.Cantidad)
+
+                             }).OrderByDescending(x => x.value);
+                if (_datos == null)
+                {
+                    return NotFound();
+                }
+                return Ok(_datos);
+            }
+            
         }
 
         // POST api/<VE_CallesXlocalidad2Controller>
