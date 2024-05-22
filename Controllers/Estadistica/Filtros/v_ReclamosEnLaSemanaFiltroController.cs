@@ -32,30 +32,31 @@ namespace ApiRVM2019.Controllers.Estadistica.Filtros
 
             if (idRol == 1)
             {
-                var info = (from recSemana in context.v_ReclamosEnLaSemana
-                            where recSemana.NombreMes.Contains(nombreMes) && recSemana.anio == anio
-
-                            group recSemana by new { recSemana.DiaDeLaSemana, recSemana.numeroDia } into g
-                            select new
-                            {
-                                name = g.Key.DiaDeLaSemana,
-                                value = g.Sum(x => x.CantidadReclamos),
-                                numero = g.Key.numeroDia
-                            }).OrderBy(numeroDia => numeroDia.numero);
-
-                if (info == null)
+                if (idLocalidad!=0 && anio != 0)
                 {
-                    return NotFound();
-                }
-                return Ok(info);
-            }
-            else
-            {
-                if (idRol == 3)
-                {
+                    //con anio y localidad de ese mes
                     var info = (from recSemana in context.v_ReclamosEnLaSemana
                                 where recSemana.NombreMes.Contains(nombreMes) && recSemana.anio == anio
-                                && recSemana.idusuario == idUsuario && recSemana.ID_Localidad == idLocalidad
+                                && recSemana.ID_Localidad == idLocalidad
+                                group recSemana by new { recSemana.DiaDeLaSemana, recSemana.numeroDia } into g
+                                select new
+                                {
+                                    name = g.Key.DiaDeLaSemana,
+                                    value = g.Sum(x => x.CantidadReclamos),
+                                    numero = g.Key.numeroDia
+                                }).OrderBy(numeroDia => numeroDia.numero);
+
+                    if (info == null)
+                    {
+                        return NotFound();
+                    }
+                    return Ok(info);
+                }else if (idLocalidad!=0 && anio==0)
+                {
+                    //busca solo por localidad y cualquier anio de ese mes
+                    var info = (from recSemana in context.v_ReclamosEnLaSemana
+                                where recSemana.NombreMes.Contains(nombreMes) && recSemana.ID_Localidad==idLocalidad
+
                                 group recSemana by new { recSemana.DiaDeLaSemana, recSemana.numeroDia } into g
                                 select new
                                 {
@@ -70,6 +71,135 @@ namespace ApiRVM2019.Controllers.Estadistica.Filtros
                     }
                     return Ok(info);
                 }
+                else if(idLocalidad==0 && anio!=0)
+                {
+                    //busca por anio de cualquier localidad pero de ese mes
+                    var info = (from recSemana in context.v_ReclamosEnLaSemana
+                                where recSemana.NombreMes.Contains(nombreMes) && recSemana.anio == anio
+
+                                group recSemana by new { recSemana.DiaDeLaSemana, recSemana.numeroDia } into g
+                                select new
+                                {
+                                    name = g.Key.DiaDeLaSemana,
+                                    value = g.Sum(x => x.CantidadReclamos),
+                                    numero = g.Key.numeroDia
+                                }).OrderBy(numeroDia => numeroDia.numero);
+
+                    if (info == null)
+                    {
+                        return NotFound();
+                    }
+                    return Ok(info);
+                }
+                else
+                {
+                    //Cuando busco por todo sin ingresar la localidad y el anio, desde principio a fin
+                    var info = (from recSemana in context.v_ReclamosEnLaSemana
+                                where recSemana.NombreMes.Contains(nombreMes)
+
+                                group recSemana by new { recSemana.DiaDeLaSemana, recSemana.numeroDia } into g
+                                select new
+                                {
+                                    name = g.Key.DiaDeLaSemana,
+                                    value = g.Sum(x => x.CantidadReclamos),
+                                    numero = g.Key.numeroDia
+                                }).OrderBy(numeroDia => numeroDia.numero);
+
+                    if (info == null)
+                    {
+                        return NotFound();
+                    }
+                    return Ok(info);
+                }
+                
+            }
+            else
+            {
+                if (idRol == 3)
+                {
+                    //USUARIO
+                    //Se visualizan la cantidad de reclamos de lunes a domingo del mes seleccionado
+                    if (idLocalidad != 0 && anio != 0)
+                    {
+                        //busque por localidad y anio
+                        var info = (from recSemana in context.v_ReclamosEnLaSemana
+                                    where recSemana.NombreMes.Contains(nombreMes) && recSemana.anio == anio
+                                    && recSemana.idusuario == idUsuario && recSemana.ID_Localidad == idLocalidad
+                                    group recSemana by new { recSemana.DiaDeLaSemana, recSemana.numeroDia } into g
+                                    select new
+                                    {
+                                        name = g.Key.DiaDeLaSemana,
+                                        value = g.Sum(x => x.CantidadReclamos),
+                                        numero = g.Key.numeroDia
+                                    }).OrderBy(numeroDia => numeroDia.numero);
+
+                        if (info == null)
+                        {
+                            return NotFound();
+                        }
+                        return Ok(info);
+
+
+                    }
+                    else if (idLocalidad == 0 && anio != 0)
+                    {
+                        //busco por anio y de cualquier localidad
+                        var info = (from recSemana in context.v_ReclamosEnLaSemana
+                                    where recSemana.NombreMes.Contains(nombreMes) && recSemana.anio == anio
+                                    && recSemana.idusuario == idUsuario 
+                                    group recSemana by new { recSemana.DiaDeLaSemana, recSemana.numeroDia } into g
+                                    select new
+                                    {
+                                        name = g.Key.DiaDeLaSemana,
+                                        value = g.Sum(x => x.CantidadReclamos),
+                                        numero = g.Key.numeroDia
+                                    }).OrderBy(numeroDia => numeroDia.numero);
+
+                        if (info == null)
+                        {
+                            return NotFound();
+                        }
+                        return Ok(info);
+
+                    }
+                    else if (idLocalidad != 0 && anio == 0)
+                    {
+                        //busco por localidad de cualquier anio
+                        var info = (from recSemana in context.v_ReclamosEnLaSemana
+                                    where recSemana.NombreMes.Contains(nombreMes) && recSemana.idusuario == idUsuario 
+                                    && recSemana.ID_Localidad == idLocalidad 
+                                    group recSemana by new { recSemana.DiaDeLaSemana, recSemana.numeroDia } into g
+                                    select new
+                                    {
+                                        name = g.Key.DiaDeLaSemana,
+                                        value = g.Sum(x => x.CantidadReclamos),
+                                        numero = g.Key.numeroDia
+                                    }).OrderBy(numeroDia => numeroDia.numero);
+                        if (info == null)
+                        {
+                            return NotFound();
+                        }
+                        return Ok(info);
+                    }
+                    else
+                    {
+                        var info = (from recSemana in context.v_ReclamosEnLaSemana
+                                    where recSemana.NombreMes.Contains(nombreMes) && recSemana.idusuario == idUsuario 
+                                    group recSemana by new { recSemana.DiaDeLaSemana, recSemana.numeroDia } into g
+                                    select new
+                                    {
+                                        name = g.Key.DiaDeLaSemana,
+                                        value = g.Sum(x => x.CantidadReclamos),
+                                        numero = g.Key.numeroDia
+                                    }).OrderBy(numeroDia => numeroDia.numero);
+
+                        if (info == null)
+                        {
+                            return NotFound();
+                        }
+                        return Ok(info);
+                    }                  
+                }
                 return NotFound();
             }
 
@@ -81,6 +211,8 @@ namespace ApiRVM2019.Controllers.Estadistica.Filtros
         [HttpGet("{id}")]
         public string Get(int id)
         {
+            //Se usa para los filtros de estadistica
+
             return "value";
         }
 
