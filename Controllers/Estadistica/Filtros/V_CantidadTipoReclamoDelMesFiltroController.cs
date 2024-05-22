@@ -34,29 +34,13 @@ namespace ApiRVM2019.Controllers.Estadistica.Filtros
                 //cuando se selecciona el mes en el grafico buscara los reclamos de ese mes, de ese año y de ese usuario por el nombre del mes
                 // ejemplo URL: https://localhost:44363/V_CantidadTipoReclamoDelMesFiltro?idRol=3&idUsuario=2&nombreMes=Febrero&anio=2024&idLocalidad=1
 
-                var cantTipo = from TRSemana in context.V_CantidadTipoReclamoDelMes
-                               where TRSemana.NombreMes.Contains(nombreMes) && TRSemana.anio == anio
-                               group TRSemana by new { TRSemana.nombre } into g
-                               select new
-                               {
-                                   name = g.Key.nombre,
-                                   value = g.Sum(x => x.CantidadTiposReclamos)
-
-                               };
-                if (cantTipo == null)
+                if (idLocalidad != 0 && anio != 0)
                 {
-                    return NotFound();
-                }
-                return Ok(cantTipo);
+                    //busque por localidad y anio
 
-            }
-            else
-            {
-                if (idRol == 3)
-                {
                     var cantTipo = from TRSemana in context.V_CantidadTipoReclamoDelMes
                                    where TRSemana.NombreMes.Contains(nombreMes) && TRSemana.anio == anio
-                                   && TRSemana.IDUsuario == idUsuario && TRSemana.ID_Localidad == idLocalidad
+                                   && TRSemana.ID_Localidad == idLocalidad
                                    group TRSemana by new { TRSemana.nombre } into g
                                    select new
                                    {
@@ -69,6 +53,188 @@ namespace ApiRVM2019.Controllers.Estadistica.Filtros
                         return NotFound();
                     }
                     return Ok(cantTipo);
+
+
+
+                }
+                else if(idLocalidad != 0 && anio == 0)
+                {
+                    //busco por localidad de cualquier anio de ese mes
+                    var cantTipo = from TRSemana in context.V_CantidadTipoReclamoDelMes
+                                   where TRSemana.NombreMes.Contains(nombreMes) && TRSemana.ID_Localidad == idLocalidad
+                                   group TRSemana by new { TRSemana.nombre } into g
+                                   select new
+                                   {
+                                       name = g.Key.nombre,
+                                       value = g.Sum(x => x.CantidadTiposReclamos)
+
+                                   };
+                    if (cantTipo == null)
+                    {
+                        return NotFound();
+                    }
+                    return Ok(cantTipo);
+
+                }
+                else if (idLocalidad == 0 && anio != 0)
+                {
+
+                    //busco por anio de cualquier localidad pero de ese mes
+                    var cantTipo = from TRSemana in context.V_CantidadTipoReclamoDelMes
+                                   where TRSemana.NombreMes.Contains(nombreMes) && TRSemana.anio == anio
+                                   group TRSemana by new { TRSemana.nombre } into g
+                                   select new
+                                   {
+                                       name = g.Key.nombre,
+                                       value = g.Sum(x => x.CantidadTiposReclamos)
+
+                                   };
+                    if (cantTipo == null)
+                    {
+                        return NotFound();
+                    }
+                    return Ok(cantTipo);
+
+                }
+                else
+                {
+                    //que no busque por ninguno
+                    var cantTipo = from TRSemana in context.V_CantidadTipoReclamoDelMes
+                                   where TRSemana.NombreMes.Contains(nombreMes)
+                                   group TRSemana by new { TRSemana.nombre } into g
+                                   select new
+                                   {
+                                       name = g.Key.nombre,
+                                       value = g.Sum(x => x.CantidadTiposReclamos)
+
+                                   };
+                    if (cantTipo == null)
+                    {
+                        return NotFound();
+                    }
+                    return Ok(cantTipo);
+                }
+
+
+
+                //var cantTipo = from TRSemana in context.V_CantidadTipoReclamoDelMes
+                //               where TRSemana.NombreMes.Contains(nombreMes) && TRSemana.anio == anio
+                //               group TRSemana by new { TRSemana.nombre } into g
+                //               select new
+                //               {
+                //                   name = g.Key.nombre,
+                //                   value = g.Sum(x => x.CantidadTiposReclamos)
+
+                //               };
+                //if (cantTipo == null)
+                //{
+                //    return NotFound();
+                //}
+                //return Ok(cantTipo);
+
+            }
+            else
+            {
+                if (idRol == 3)
+                {
+
+                    if (idLocalidad != 0 && anio != 0)
+                    {
+                        //busque por localidad y anio
+
+                        var cantTipo = from TRSemana in context.V_CantidadTipoReclamoDelMes
+                                       where TRSemana.NombreMes.Contains(nombreMes) && TRSemana.anio == anio
+                                       && TRSemana.IDUsuario == idUsuario && TRSemana.ID_Localidad == idLocalidad
+                                       group TRSemana by new { TRSemana.nombre } into g
+                                       select new
+                                       {
+                                           name = g.Key.nombre,
+                                           value = g.Sum(x => x.CantidadTiposReclamos)
+                                       };
+                        if (cantTipo == null)
+                        {
+                            return NotFound();
+                        }
+                        return Ok(cantTipo);
+                    }
+                    else if (idLocalidad == 0 && anio != 0)
+                    {
+                        //busco por anio y de cualquier localidad
+
+                        var cantTipo = from TRSemana in context.V_CantidadTipoReclamoDelMes
+                                       where TRSemana.NombreMes.Contains(nombreMes) && TRSemana.anio == anio
+                                       && TRSemana.IDUsuario == idUsuario
+                                       group TRSemana by new { TRSemana.nombre } into g
+                                       select new
+                                       {
+                                           name = g.Key.nombre,
+                                           value = g.Sum(x => x.CantidadTiposReclamos)
+
+                                       };
+                        if (cantTipo == null)
+                        {
+                            return NotFound();
+                        }
+                        return Ok(cantTipo);
+
+                    }
+                    else if (idLocalidad != 0 && anio == 0)
+                    {
+
+                        //busco por localidad de cualquier anio
+                        var cantTipo = from TRSemana in context.V_CantidadTipoReclamoDelMes
+                                       where TRSemana.NombreMes.Contains(nombreMes) && TRSemana.IDUsuario == idUsuario
+                                       && TRSemana.ID_Localidad == idLocalidad
+                                       group TRSemana by new { TRSemana.nombre } into g
+                                       select new
+                                       {
+                                           name = g.Key.nombre,
+                                           value = g.Sum(x => x.CantidadTiposReclamos)
+
+                                       };
+                        if (cantTipo == null)
+                        {
+                            return NotFound();
+                        }
+                        return Ok(cantTipo);
+
+                    }
+                    else
+                    {
+                        //se busca el historio de todas las localidades y anio que registre
+                        var cantTipo = from TRSemana in context.V_CantidadTipoReclamoDelMes
+                                       where TRSemana.NombreMes.Contains(nombreMes) && TRSemana.IDUsuario == idUsuario 
+                                       group TRSemana by new { TRSemana.nombre } into g
+                                       select new
+                                       {
+                                           name = g.Key.nombre,
+                                           value = g.Sum(x => x.CantidadTiposReclamos)
+
+                                       };
+                        if (cantTipo == null)
+                        {
+                            return NotFound();
+                        }
+                        return Ok(cantTipo);
+                    }
+
+
+
+                    //var cantTipo = from TRSemana in context.V_CantidadTipoReclamoDelMes
+                    //               where TRSemana.NombreMes.Contains(nombreMes) && TRSemana.anio == anio
+                    //               && TRSemana.IDUsuario == idUsuario && TRSemana.ID_Localidad == idLocalidad
+                    //               group TRSemana by new { TRSemana.nombre } into g
+                    //               select new
+                    //               {
+                    //                   name = g.Key.nombre,
+                    //                   value = g.Sum(x => x.CantidadTiposReclamos)
+
+                    //               };
+                    //if (cantTipo == null)
+                    //{
+                    //    return NotFound();
+                    //}
+                    //return Ok(cantTipo);
                 }
 
                 return NotFound();
