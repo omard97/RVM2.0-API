@@ -32,25 +32,46 @@ namespace ApiRVM2019.Controllers.Estadistica
         }
 
         // GET api/<EstPorcentajeCalleXLocalidadController>/5
-        [HttpGet("{idUsuario}")]
-        public IActionResult GetDatos(int idUsuario)
+        [HttpGet("{idUsuario}/{idRol}")]
+        public IActionResult GetDatos(int idUsuario, int idRol)
         {
             //https://localhost:44363/EstPorcentajeCalleXLocalidad/2
             //Utilizada para mostrar las tarjetas de las cantidades de reclamos dependiendo de cada localidad de cordoba
-            var _datos = from VE_ReclamosXLocalidadesController in context.VE_ReclamosXLocalidad
-                         where VE_ReclamosXLocalidadesController.IDUsuario == idUsuario
-                         select new
-                         {
-                             
-                             name = VE_ReclamosXLocalidadesController.Localidad,
-                             value = VE_ReclamosXLocalidadesController.Cantidad,
-                             
-                         };
-            if (_datos == null)
+            if (idRol==1)
             {
-                return NotFound();
+                var _datos = (from vista in context.VE_ReclamosXLocalidad   
+                             group vista by new { vista.IDLocalidad, vista.Localidad } into g
+                             select new
+                             {
+
+                                 name = g.Key.Localidad,
+                                 value = g.Sum(x=> x.Cantidad)
+
+                             }).OrderByDescending(X => X.value);
+                if (_datos == null)
+                {
+                    return NotFound();
+                }
+                return Ok(_datos);
             }
-            return Ok(_datos);
+            else
+            {
+                var _datos = from VE_ReclamosXLocalidadesController in context.VE_ReclamosXLocalidad
+                             where VE_ReclamosXLocalidadesController.IDUsuario == idUsuario
+                             select new
+                             {
+
+                                 name = VE_ReclamosXLocalidadesController.Localidad,
+                                 value = VE_ReclamosXLocalidadesController.Cantidad,
+
+                             };
+                if (_datos == null)
+                {
+                    return NotFound();
+                }
+                return Ok(_datos);
+            }
+            
         }
 
         // POST api/<EstPorcentajeCalleXLocalidadController>
