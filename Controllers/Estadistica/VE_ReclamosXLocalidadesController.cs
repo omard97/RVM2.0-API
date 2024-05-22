@@ -32,11 +32,33 @@ namespace ApiRVM2019.Controllers.Estadistica
         }
 
         // GET api/<VE_ReclamosXLocalidadesController>/5
-        [HttpGet("{idUsuario}")]
-        public IActionResult Get(int idUsuario) 
+        [HttpGet("{idUsuario}/{idRol}")]
+        public IActionResult Get(int idUsuario, int idRol) 
         {
-            
-            
+
+            if (idRol == 1)
+            {
+                //Administrador
+                //va a ser el usuario comun
+                //Crear otro controlador para el administrador
+                //https://localhost:44363/VE_ReclamosXLocalidades/2
+                //Utilizada para mostrar las tarjetas de las cantidades de reclamos dependiendo de cada localidad de cordoba
+
+                var _datos = from localidad in context.Localidad
+                            select new
+                            {
+                                IDLocalidad = localidad.IDLocalidad,
+                                Localidad = localidad.Nombre
+                            };
+             
+                if (_datos == null)
+                {
+                    return NotFound();
+                }
+                return Ok(_datos);
+            }
+            else
+            {
                 //va a ser el usuario comun
                 //Crear otro controlador para el administrador
                 //https://localhost:44363/VE_ReclamosXLocalidades/2
@@ -55,6 +77,10 @@ namespace ApiRVM2019.Controllers.Estadistica
                     return NotFound();
                 }
                 return Ok(_datos);
+            }
+            
+            
+               
             
             
         }
